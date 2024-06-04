@@ -1,0 +1,80 @@
+@charset "utf-8";
+
+$font-size-base: 16px;
+
+// ------------------------------------------------------------
+// Example
+// @include ellipsis;
+// ------------------------------------------------------------ 
+@mixin ellipsis($width: 100%) {
+	display: inline-block;
+	max-width: $width;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	word-wrap: normal;
+}
+
+//  ------------------------------------------------------------
+// Example
+// Define vertical, horizontal, or both position
+//   Using the mixin
+// .foo {
+//       @include center-align(both);
+//       @include center-align(def);
+//       @include center-align(self,20px,10px,0,0);
+//   }
+//   .foo-parent {
+//       position: relative;
+//   }
+// ------------------------------------------------------------ 
+@mixin center($position, $T:null, $R:null, $B:null, $L:null) {
+  position: absolute;
+  
+  @if $position == 'vertical' {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  @else if $position == 'horizontal' {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translate(-50%);
+  }
+  @else if $position == 'both' {
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+	@else if $position == 'def' {
+    top: 0;
+    left: 0;
+  }
+	@else if $position == 'self' {
+    top: $T;
+		left: $L;
+		right: $R;
+		bottom: $B;
+  }
+}
+
+// font size rem 변환
+@function calcRem($target, $context: $font-size-base) {
+  @return ($target / $context) * 1rem;
+}
+
+//  ------------------------------------------------------------
+// font size, color 반환
+// Example
+// @include font(12px,#606060); px사용
+// @include font(12px); 컬러값 불필요할 때
+// @include font(calcRem(12px),#606060); rem변환 사용
+// ------------------------------------------------------------ 
+@mixin font($size, $color: false) {
+  font-size: $size;
+
+  @if $color != false {
+    color: $color;
+  }
+}

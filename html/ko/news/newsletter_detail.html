@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>NEUL Digital Care Platform</title>
+    <meta charset="utf-8" />
+    <meta name="title" content="NEUL Digital Care Platform" />
+    <meta name="Description" content="NEUL Digital Care Platform" />
+    <meta name="keywords" content="NEUL Digital Care Platform" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta property="og:title" content="늘 마음 놓고 돌봄을 시작하다. 늘 NEUL" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.neulcare.com/" />
+    <meta property="og:image" content="../../../assets/common/images/neul_opengraph.png" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" />
+    <link rel="icon" href="../../../assets/common/images/favicon/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../../../assets/common/css/style.css" />
+    
+    <!-- 플러그인 순서중요-->
+    <script type="text/javascript" src="../../../assets/common/js/jquery-3.6.3.min.js"></script>
+    <script type="text/javascript" src="../../../assets/common/js/jquery-ui.min.js"></script>
+    <!-- 자체 자스 -->
+    <script type="text/javascript" src="../../../assets/common/js/common.js"></script>
+    <script type="text/javascript" src="../../../assets/common/js/ani.js"></script>
+    <script type="text/javascript">
+      $(function () {});
+    </script>
+  </head>
+  <body>
+    <!-- #wrap -->
+    <div id="wrap">
+      <!-- header -->
+      <div id="header" class="active">
+        <div class="header-wrap">
+          <h1 class="logo">
+            <a href="../../../index.html"><img src="../../../assets/common/images/logo_w.svg" alt="NEUL" /></a>
+            <a href="../../../index.html"><img src="../../../assets/common/images/logo_b.svg" alt="NEUL" /></a>
+          </h1>
+          <div class="gnb">
+            <ul class="nav">
+              <li class="main-menu">
+                <!-- [D]: nav-toggle에 active 클래스 추가 시 활성화 -->
+                <a href="../neul/company.html" class="nav-toggle no-depth"><span>About</span></a>
+              </li>
+              <li class="main-menu">
+                <a href="../service/neul_silver_care.html" class="nav-toggle"><span>Service</span></a>
+              </li>
+              <li class="main-menu">
+                <a href="../product/band.html" class="nav-toggle"><span>Product</span></a>
+              </li>
+              <li class="main-menu">
+                <a href="../news/press_release.html" class="nav-toggle active"><span>News</span></a>
+              </li>
+              <li class="main-menu" onclick="common.channelTalk();">
+                <a href="" class="nav-toggle no-depth"><span>Contact us</span></a>
+              </li>
+            </ul>
+            <div class="etc-menu">
+              <!-- 2023-12-27 v.08_20231227 변경사항 적용 -->
+              <button type="button" class="btn btn-icon demo" onclick="common.channelTalk();">DEMO 신청</button>
+              <!-- [D]: 활성화일 경우 .active 추가 -->
+              <div class="lang">
+                <a href="#" class="btn-lang"></a>
+                <ul>
+                  <li>
+                    <a href="#">한국어</a>
+                  </li>
+                  <li>
+                    <a href="#">English</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- 모바일 버튼 -->
+          <button type="button" class="btn-drawer"></button>
+        </div>
+        <div class="sub-bg"></div>
+      </div>
+    <!-- 메인컨텐츠 -->
+      <div id="container">
+        <div class="main detail newletter-detail">
+          <!-- 2024-01-08 텍스트 수정 -->
+          <div class="subtitle">News</div>
+
+          <div class="depth">
+            <ul>
+              <li>
+                <a href="../news/press_release.html">보도자료</a>
+              </li>
+              <li class="active">
+                <a href="../news/newsletter.html">뉴스레터</a>
+              </li>
+            </ul>
+          </div>
+  
+          <div class="subscription">
+            <div class="form-set">
+              <div class="input-set">
+                <input type="text" placeholder="이름">
+              </div>
+              <div class="chk-set">
+                <div class="chk-box">
+                  <!-- 2023-12-27 v.08_20231227 변경사항 적용 팝업창열기 - common.openModalPopup('personal') -->
+                  <!-- 2024-01-04 텍스트를 누르면 팝업창이 등장하게 수정 -->
+                  <input type="checkbox" name="chk1" id="chk1">
+                  <label for="chk1"><span onclick="common.openModalPopup('personal')">(필수) 개인정보 수집 및 이용에 동의합니다.</span></label>
+                </div>
+              </div>
+            </div>
+            <div class="form-set">
+              <div class="input-set">
+                <input type="text" placeholder="이메일 주소">
+              </div>
+              <div class="chk-set">
+                <div class="chk-box">
+                  <!-- 2023-12-27 v.08_20231227 변경사항 적용 팝업창열기 - common.openModalPopup('advertising') -->
+                  <!-- 2024-01-04 텍스트를 누르면 팝업창이 등장하게 수정 -->
+                  <input type="checkbox" name="chk2" id="chk2">
+                  <label for="chk2"><span onclick="common.openModalPopup('advertising')">(필수) 광고성 정보 수신에 동의합니다.</span></label>
+                </div>
+              </div>
+            </div>
+            <div class="btn-set">
+              <!-- 2023-12-27 v.08_20231227 변경사항 적용 common.openModalPopup('completion') -->
+              <button class="btn-subs" onclick="common.openModalPopup('completion')">지금 구독하기</button>
+            </div>
+          </div>
+          
+          <div class="article">
+            <div class="tit-set">
+              <div class="tit">[인터뷰]'NEUL(늘)' 실버케어 서비스, '광주·전남 확산'의 첨병될 것</div>
+              <!-- 2023-12-28 다운로드 추가 -->
+              <!-- 2024-01-04 v0.1_240102 수정 -->
+              <div class="flex-set">
+                <div class="flex-set">
+                  <div class="tag">인터뷰</div>
+                  <div class="date">2023.03.23</div>
+                </div>
+               <div class="download">다운로드</div>
+              </div>
+            </div>
+            <div class="figure">
+              <div class="img-set">
+                <img src="../../../assets/common/images/news/news2.png" alt="">
+              </div>
+              <div class="figcaption">고용길 비투엔 광주AI융합센터장이 에이빙뉴스 취재진과의 인터뷰를 통해 "많은 어르신들이 보다 안전하고 건강하게 지내실 수 있도록 자체 솔루션을 
+                여러 병원에 도입할 것이다. 이를 위해 기술 고도화에 힘쓸 것"이라고 말했다.</div>
+            </div>
+            <div class="txt">
+              <div>인공지능(AI) 중심도시를 조성 중인 광주광역시가 지난 1월 5일(목)부터 8일(일, 현지 시각)까지 미국 라스베이거스에서 열린 세계 최대 가전·IT 전시회인 'CES 2023'에 처음으로 참가했다. 광주 공동브랜드(지엘·GIEL) 참여기업들의 기술력과 제품을 넓은 시장에 알리기 위해서다. 수출계약, 기업 유치 등 성과도 창출했다. </div>
+              <div>광주광역시와 지역기업들이 일궈낸 성과는 광주가 AI 중심도시로 도약하는 데 밑거름이 됨과 동시에 세계로 나아가는 전환점이 될 것이라는 전망이 나온다. 인공지능산업융합사업단, 광주테크노파크, 광주정보문화산업진흥원, 대학 등 지역 기관들이 함께 부단히 노력한 결과다.  
+              </div>
+              <div>CES를 계기로 '광주 첨단 미래산업'의 혁신이 지속되길 바라는 취지에서 글로벌 뉴스 네트워크 '에이빙뉴스(AVING)'가 CES에 참가한 지역기업, 핵심 관계자들을 만나 CES 현장에서 본 최신 ICT 기술 정보와 지식, 다양한 아이디어와 후기를 들어보는 릴레이 인터뷰를 진행한다. </div>
+            </div> 
+            <button class="btn btn-list"><a href="newsletter.html">목록보기</a></button>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer 시작 -->
+      <div id="footer">
+        <div class="footer-wrap">
+          <div class="footer-logo"></div>
+          <div class="footer-info">
+            <p>상호명 <span>(주)비투엔</span> 대표이사 : <span>안태일</span></p>
+            <p class="address">
+              (07255) 서울특별시 영등포구 선유로 146<br />
+              이앤씨드림타워 2층
+            </p>
+            <ul class="contact-list">
+              <li class="email">
+                <a href="mailto:neulcare@b2en.com">neulcare@b2en.com</a>
+              </li>
+              <li class="tel">02. 2636. 0805</li>
+              <li>사업자 등록번호 : 302-87-00950</li>
+            </ul>
+          </div>
+          <p class="copyright">ⓒB2EN CO.LTD.ALL RIGHTS RESERVED.</p>
+        </div>
+      </div>
+      </div>
+    </div>
+    <!-- //#wrap -->
+
+    <!-- [D]: 개인정보 수집 동의 팝업 -->
+    <div class="popup pop-alert personal">
+      <div class="popup-header rgt">
+        <button type="button" class="popup-close" onclick="common.closeModalPopup();"></button>
+      </div>
+      <div class="popup-content">
+        <div class="tit-set">
+          <div class="tit">개인정보 수집 및 이용</div>
+          <div class="txt">뉴스레터 발송을 위한 최소한의 개인 정보가 수집되며 <br>수집된 정보는 발송 외의 다른 목적으로 이용되지 않습니다. 수집된 정보는 서비스가 종료되거나 구독을 해지할 경우 즉시 파기됩니다.</div>
+        </div>
+      </div>
+      <div class="popup-footer">
+        <div class="btn-set">
+          <button type="button" class="primary" onclick="common.closeModalPopup();">확인</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- [D]: 광고성 정보 수신 동의 팝업 -->
+    <div class="popup pop-alert advertising">
+      <div class="popup-header rgt">
+        <button type="button" class="popup-close" onclick="common.closeModalPopup();"></button>
+      </div>
+      <div class="popup-content">
+        <div class="tit-set">
+          <div class="tit">광고성 정보 수신 및 이용</div>
+          <div class="txt">제휴 콘텐츠, 프로모션, 이벤트 정보 등의 광고성 정보를 수신합니다.</div>
+        </div>
+      </div>
+      <div class="popup-footer">
+        <div class="btn-set">
+          <button type="button" class="primary" onclick="common.closeModalPopup();">확인</button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- [D]: 구독완료 팝업 -->
+    <div class="popup pop-alert completion">
+      <div class="popup-header rgt">
+        <button type="button" class="popup-close" onclick="common.closeModalPopup();"></button>
+      </div>
+      <div class="popup-content">
+        <div class="tit-set">
+          <!-- 2024-01-04 텍스트 수정 -->
+          <!-- 2024-01-08 텍스트 수정 -->
+          <div class="txt">뉴스레터 구독 신청이 <br>완료되었습니다.</div>
+        </div>
+      </div>
+      <div class="popup-footer">
+        <div class="btn-set">
+          <button type="button" class="primary" onclick="common.closeModalPopup();">확인</button>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>

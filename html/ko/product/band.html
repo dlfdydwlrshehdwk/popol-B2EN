@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>NEUL Digital Care Platform</title>
+    <meta charset="utf-8" />
+    <meta name="title" content="NEUL Digital Care Platform" />
+    <meta name="Description" content="NEUL Digital Care Platform" />
+    <meta name="keywords" content="NEUL Digital Care Platform" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta property="og:title" content="늘 마음 놓고 돌봄을 시작하다. 늘 NEUL" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.neulcare.com/" />
+    <meta property="og:image" content="../../../assets/common/images/neul_opengraph.png" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" />
+    <link rel="icon" href="../../../assets/common/images/favicon/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../../../assets/common/css/style.css" />
+    
+    <!-- 플러그인 순서중요-->
+    <script type="text/javascript" src="../../../assets/common/js/jquery-3.6.3.min.js"></script>
+    <script type="text/javascript" src="../../../assets/common/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../../../assets/common/js/jquery-3.6.3.min.js"></script>
+    <script type="text/javascript" src="../../../assets/common/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../../../assets/common/js/greensock/gsap.min.js"></script>
+    <script type="text/javascript" src="../../../assets/common/js/greensock/ScrollTrigger.min.js"></script>
+    <script type="text/javascript" src="../../../assets/common/js/greensock/TweenMax.min.js"></script>
+    <script type="text/javascript" src="../../../assets/common/js/ScrollMagic.min.js"></script>
+    <script type="text/javascript" src="../../../assets/common/js/animation.gsap.js"></script>
+    <script type="text/javascript" src="../../../assets/common/js/debug.addIndicators.min.js"></script>
+     <script type="text/javascript" src="../../../assets/common/js/ScrollToPlugin.min.js"></script>
+    <!-- 자체 자스 -->
+    <script type="text/javascript" src="../../../assets/common/js/common.js"></script>
+    <script type="text/javascript" src="../../../assets/common/js/ani.js"></script>
+    <script type="text/javascript">
+      $(function () {});
+    </script>
+  </head>
+  <body>
+    <!-- #wrap -->
+    <div id="wrap">
+      <!-- header -->
+      <div id="header" class="active">
+        <div class="header-wrap">
+          <h1 class="logo">
+            <a href="../../../index.html"><img src="../../../assets/common/images/logo_w.svg" alt="NEUL" /></a>
+            <a href="../../../index.html"><img src="../../../assets/common/images/logo_b.svg" alt="NEUL" /></a>
+          </h1>
+          <div class="gnb">
+            <ul class="nav">
+              <li class="main-menu">
+                <!-- [D]: nav-toggle에 active 클래스 추가 시 활성화 -->
+                <a href="../neul/company.html" class="nav-toggle no-depth"><span>About</span></a>
+              </li>
+              <li class="main-menu">
+                <a href="../service/neul_silver_care.html" class="nav-toggle"><span>Service</span></a>
+              </li>
+              <li class="main-menu">
+                <a href="./band.html" class="nav-toggle active"><span>Product</span></a>
+              </li>
+              <li class="main-menu">
+                <a href="../news/press_release.html" class="nav-toggle"><span>News</span></a>
+              </li>
+              <li class="main-menu" onclick="common.channelTalk();">
+                <a href="#" class="nav-toggle no-depth"><span>Contact us</span></a>
+              </li>
+            </ul>
+            <div class="etc-menu">
+              <!-- 2023-12-27 v.08_20231227 변경사항 적용 -->
+              <button type="button" class="btn btn-icon demo" onclick="common.channelTalk();">DEMO 신청</button>
+              <!-- [D]: 활성화일 경우 .active 추가 -->
+              <div class="lang">
+                <a href="#" class="btn-lang"></a>
+                <ul>
+                  <li>
+                    <a href="#">한국어</a>
+                  </li>
+                  <li>
+                    <a href="#">English</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- 모바일 버튼 -->
+          <button type="button" class="btn-drawer"></button>
+        </div>
+        <div class="sub-bg"></div>
+      </div>
+      <!-- 메인컨텐츠 -->
+      <div id="container">
+        <div class="main band">
+          <div class="section section1">
+              <div class="tit-set">
+                <div class="stit">NEUL Band</div>
+                <div class="tit">늘 <br />안심할 수 있도록</div> <!-- 2024-02-20 수정 -->
+              </div>
+              <div class="img-set"></div>
+          </div>
+
+          <!-- 2024-02-20 수정 시작 -->
+          <div class="section section2 trigger">
+            <div class="wrap row">
+              <div class="tit-set">
+                <div class="tit">
+                  <span>고령 환자를 위한</span> 소재, <br />착용감, 편의성 모두를 <br />담았습니다.
+                </div>
+                <div class="txt">
+                  <span>친환경 소재</span>로 약한 피부에도 <span>안전하게</span>, <br>
+                  <span>최대 5일</span>까지 충전 없이 사용할 수 있죠. <br>
+                  게다가 <span>응급호출 SOS 버튼</span>으로 안전사각지대 <br>걱정 없이 사용할 수 있어요.
+                </div>
+                <!-- <div class="flex-set">
+                  <div class="tit-set mini">
+                    <div class="tit"></div>
+                    <div class="txt">
+                      친환경 소재로 약한 피부에도 <span>안전하게</span>, <br>
+                      <span>최대 5일</span>까지 충전 없이 사용할 수 있죠. <br>
+                      게다가 응급호출 <span>SOS 버튼</span>으로 안전사각지대 걱정 없이 사용할 수 있어요.
+                    </div>
+                  </div>
+                </div> -->
+              </div>
+              <div class="img-set"></div>
+            </div>
+          </div>
+          
+          <div class="section section3 trigger">
+            <div class="wrap row">
+              <div class="img-set"></div>
+              <div class="tit-set">
+                <div class="tit"><span>장시간 착용</span>해도 <br /><span>편안한</span> 착용성</div>
+                <div class="txt">
+                  <span>찬 듯 안 찬 듯, </span>가벼운 무게로 <br />
+                  오래 착용해도 팔목에 부담없이, <br />
+                  친환경 실리콘 소재로 아토피 또는 <br />
+                  약한 피부에 착용해도 <span>안전</span>합니다. 
+                </div>
+                <div class="flex-set">
+                  <div class="tit-set mini">
+                    <div class="tit">무게</div>
+                    <div class="txt">27g *기본 스트랩 포함</div>
+                  </div>
+                  <div class="tit-set mini">
+                    <div class="tit">스트랩 소재</div>
+                    <div class="txt">TPU 또는 실리콘</div>
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="content">
+                <div class="img-set"></div>
+                <div class="tit-set">
+                  <div class="txt">
+                    <span>찬 듯 안 찬 듯, </span>가벼운 무게로 <br />
+                    오래 착용해도 팔목에 부담없이, <br />
+                    친환경 실리콘 소재로 아토피 또는 <br />
+                    약한 피부에 착용해도 <span>안전</span>합니다. 
+                  </div><div class="flex-set">
+                    <div class="tit-set">
+                      <div class="tit">무게</div>
+                      <div class="txt">27g *기본 스트랩 포함</div>
+                    </div>
+                    <div class="tit-set">
+                      <div class="tit">스트랩 소재</div>
+                      <div class="txt">TPU 또는 실리콘</div>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+            </div>
+          </div>
+
+          <div class="section section4 trigger">
+            <div class="wrap row">
+              <div class="tit-set white">
+                <div class="tit">안전을 지키기 위한 <br />강력한 기능</div>
+                <div class="txt">고령일수록 평균 바이탈 범위가 <br />다양하기에 <span>AI 모델</span>을 적용하여 
+                  <br /><span>개인화된 모니터링</span>을 제공합니다.
+                </div>
+              </div>
+              <ul class="content">
+                <li>
+                  <div class="tit-set">
+                    <div class="tit">심박수</div>
+                    <div class="txt">
+                      주기적으로 심박수를 측정하여 <br />
+                      비정상적으로 낮거나 높은 박동이거나 <br />
+                      불규칙할 경우 알림을 보냅니다.
+                    </div>
+                  </div>
+                  <div class="img-set"></div>
+                </li>
+                <li>
+                  <div class="tit-set">
+                    <div class="tit">혈압</div>
+                    <div class="txt">
+                      다양한 지표를 통해 휴식 상태로 <br />
+                      판단될 경우 손목에서 바로 혈압을 <br />
+                      측정합니다.
+                    </div>
+                  </div>
+                  <div class="img-set"></div>
+                </li>
+                <li>
+                  <div class="tit-set">
+                    <div class="tit">호흡수</div>
+                    <div class="txt">
+                      평상시 호흡 상태와 더불어 <br />
+                      수면 중 호흡 수를 측정하여 <br />
+                      수면의 질을 관리합니다.
+                    </div>
+                  </div>
+                  <div class="img-set"></div>
+                </li>
+                <li>
+                  <div class="tit-set">
+                    <div class="tit">산소포화도</div>
+                    <div class="txt">
+                      혈중 산소 포화도를 측정하고 <br />
+                      다른 지표와 함께 분석하여 <br />
+                      건강에 대한 통찰력을 높입니다.
+                    </div>
+                  </div>
+                  <div class="img-set"></div>
+                </li>
+                <li>
+                  <div class="tit-set">
+                    <div class="tit">체온</div>
+                    <div class="txt">
+                      깨어 있거나, 잠을 자는 동안에 <br />
+                      언제든 손목 온도 변화를 감지하여 <br />
+                      건강 상태를 파악합니다.
+                    </div>
+                  </div>
+                  <div class="img-set"></div>
+                </li>
+                <li>
+                  <div class="tit-set">
+                    <div class="tit">스트레스 지수</div>
+                    <div class="txt">
+                      다양한 신체 변화를 바탕으로 <br />
+                      실시간 스트레스 지수를 수치화하여 <br />
+                      스트레스를 모니터링 합니다.
+                    </div>
+                  </div>
+                  <div class="img-set"></div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="section section5 trigger">
+            <div class="wrap row">
+              <div class="tit-set">
+                <div class="tit">2시간 30분 충전으로 <br />최대 5일까지</div>
+                <div class="txt"><span>최대 120시간 </span>지속되는 <br />한 차원 높은 <span>배터리 </span>성능</div>
+              </div>
+              <ul class="content">
+                <li>
+                  <div class="tit-set">
+                    <div class="tit">충전</div>
+                    <div class="txt"><span>2</span>시간 <span>30</span>분</div>
+                  </div>
+                </li>
+                <li>
+                  <div class="tit-set">
+                    <div class="tit">대기</div>
+                    <div class="txt"><span>120</span>시간</div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="section section6 trigger">
+            <div class="wrap row">
+              <div class="tit-set">
+                <div class="tit">응급상황이 발생하면 <br>언제든 SOS</div>
+                <div class="txt"><span>응급 상황</span>일 경우 정면의 응급 버튼을 누르면 <br />
+                  빠르게 SOS를 보내고, 관련 기관 및 의료진은 <br /> 
+                  <span>어르신의 위치와 상태</span>를 신속하게 확인합니다.</div>
+              </div>
+              <div class="img-set"></div>
+            </div>
+          </div>
+              
+          <div class="section section7 trigger">
+            <div class="wrap">
+              <div class="tit-set">
+                <div class="tit">실시간이면서 정확한 통신</div>
+                <div class="txt">
+                  전용 통신 장비 또는 모바일 연동 앱을 통해 정밀하고 정확한 <span>실시간 송수신</span>을 지원합니다.
+                </div>
+              </div>
+
+              <ul class="content">
+                <li class="type1">
+                  <div class="con-top">
+                    <div class="tit-set">
+                      <p class="chip">유형1</p>
+                      <div class="tit">
+                        전용 통신 장비 <br />
+                        NeulHub를 이용한 <br />
+                        통신방법
+                      </div>
+                    </div>
+                  </div>
+                  <div class="con-bottom">
+                    <div class="tit-set">
+                      늘 케어 플랫폼에서 <br />
+                      별도 제공하는 <span>통신장비</span> <br />
+                      <span class="txt_neul_hub">NEUL HUB</span>를 통해 <br />
+                      블루투스 통신
+                    </div>
+                    <div class="img-set"><span class="blind">늘 밴드 &gt; 블루투스 &gt; 늘 허브(별도제공) &gt; 인터넷(Wifi) &gt; 모니터링 서비스</span></div>
+                  </div>
+                </li>
+                <li class="type2">
+                  <div class="con-top">
+                    <div class="tit-set">
+                      <p class="chip">유형2</p>
+                      <div class="tit">
+                        모바일 연동 <br />
+                        App을 이용한 <br />
+                        통신방법
+                      </div>
+                    </div>
+                  </div>
+                  <div class="con-bottom">
+                    <div class="tit-set">
+                      늘 케어 플랫폼에서 <br />
+                      별도 제공하는 <span>모바일용 <br />연동 App</span>을 통해 <br>
+                      블루투스 통신
+                    </div>
+                    <div class="img-set"><span class="blind">늘 밴드 &gt; 블루투스 &gt; 모바일 연동앱(스마트폰) &gt; 인터넷(Wifi) &gt; 모니터링 서비스</span></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- 2024-02-20 수정 끝 -->
+
+          <div class="section section8 counseling trigger">
+            <div class="wrap">
+              <ul>
+                <li>
+                  <a href="#" onclick="common.openModalPopup('pop-inquiry')">
+                    <div class="tit-set">
+                      <div class="tit">문의하기</div>
+                      <div class="txt">Neul 서비스가 궁금하시다면 1:1 채팅상담으로 가볍고 빠르게 상담 받아 보세요.</div>
+                      <div class="button">1:1 채팅</div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="" onclick="common.openModalPopup('pop-demo-app')">
+                    <div class="tit-set">
+                      <div class="tit">무료 체험하기</div>
+                      <div class="txt">웹사이트에 설치하거나 다운로드 없이 무료로 이용할 수 있습니다.</div>
+                      <div class="button">바로가기</div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="section section9 releted-service trigger">
+            <div class="wrap">
+              <div class="tit-set">
+                  <div class="tit">함께 사용하면 좋은 <span>서비스</span>를 확인하세요</div >
+                  <button class="download">
+                    <a href="#">소개서 다운로드</a>
+                  </button>
+              </div>
+              <!-- 2024-02-20 수정 시작 -->
+              <ul class="content">
+                <li>
+                  <a href="../service/neul_silver_care.html">
+                    <!-- .neul: 늘 적정성 평가 .care: 늘 케어 .band: 늘 밴드 -->
+                    <div class="img-set care"></div>
+                    <div class="tit-set">
+                      <div class="tit"><span>늘 실버케어</span>는 AI 기반 요양병원 환자 위험도 <br />예측과 예방을 통한 한발 앞선 돌봄이 가능합니다.</div>
+                      <div class="button">바로가기</div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="../service/assessment.html">
+                    <!-- .neul: 늘 적정성 평가 .care: 늘 케어 .band: 늘 밴드 -->
+                    <div class="img-set neul"></div>
+                    <div class="tit-set">
+                      <div class="tit">체계적인 프로세스 관리를 통해 <br>새로운 <span>늘 적정성 평가</span>를 경험해 보세요.</div>
+                      <div class="button">바로가기</div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+              <!-- 2024-02-20 수정 끝 -->
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <!-- 메인컨텐츠 -->
+
+
+
+
+      <!-- footer -->
+      <div id="footer">
+        <div class="footer-wrap">
+          <div class="footer-logo"></div>
+          <div class="footer-info">
+            <p>상호명 <span>(주)비투엔</span> 대표이사 : <span>안태일</span></p>
+            <p class="address">
+              (07255) 서울특별시 영등포구 선유로 146<br />
+              이앤씨드림타워 2층
+            </p>
+            <ul class="contact-list">
+              <li class="email">
+                <a href="mailto:neulcare@b2en.com">neulcare@b2en.com</a>
+              </li>
+              <li class="tel">02. 2636. 0805</li>
+              <li>사업자 등록번호 : 302-87-00950</li>
+            </ul>
+          </div>
+          <p class="copyright">ⓒB2EN CO.LTD.ALL RIGHTS RESERVED.</p>
+        </div>
+      </div>
+      
+    </div>
+    <!-- //#wrap -->
+
+  </body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>NEUL Digital Care Platform</title>
+    <meta charset="utf-8" />
+    <meta name="title" content="NEUL Digital Care Platform" />
+    <meta name="Description" content="NEUL Digital Care Platform" />
+    <meta name="keywords" content="NEUL Digital Care Platform" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta property="og:title" content="늘 마음 놓고 돌봄을 시작하다. 늘 NEUL" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.neulcare.com/" />
+    <meta property="og:image" content="../../../assets/common/images/neul_opengraph.png" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" />
+    <link rel="icon" href="../../../assets/common/images/favicon/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../../../assets/common/css/style.css" />
+
+    <!-- 플러그인 순서중요-->
+    <script type="text/javascript" src="../../../assets/common/js/jquery-3.6.3.min.js"></script>
+    <script type="text/javascript" src="../../../assets/common/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../../../assets/common/js/greensock/gsap.min.js"></script>
+    <script type="text/javascript" src="../../../assets/common/js/greensock/ScrollTrigger.min.js"></script>
+    <script type="text/javascript" src="../../../assets/common/js/greensock/TweenMax.min.js"></script>
+    <script type="text/javascript" src="../../../assets/common/js/ScrollMagic.min.js"></script>
+    <script type="text/javascript" src="../../../assets/common/js/animation.gsap.js"></script>
+    <script type="text/javascript" src="../../../assets/common/js/debug.addIndicators.min.js"></script>
+     <script type="text/javascript" src="../../../assets/common/js/ScrollToPlugin.min.js"></script>
+    <!-- 자체 자스 -->
+    <script type="text/javascript" src="../../../assets/common/js/common.js"></script>
+    <script type="text/javascript" src="../../../assets/common/js/ani.js"></script>
+  </head>
+  <body>
+    <!-- #wrap -->
+    <div id="wrap">
+      <!-- header -->
+      <div id="header" class="active">
+        <div class="header-wrap">
+          <h1 class="logo">
+            <a href="../../../index.html"><img src="../../../assets/common/images/logo_w.svg" alt="NEUL" /></a>
+            <a href="../../../index.html"><img src="../../../assets/common/images/logo_b.svg" alt="NEUL" /></a>
+          </h1>
+          <div class="gnb">
+            <ul class="nav">
+              <li class="main-menu">
+                <!-- [D]: nav-toggle에 active 클래스 추가 시 활성화, 하위 뎁스 없는 경우 no-depth 클래스 추가 -->
+                <a href="company.html" class="nav-toggle active"><span>About</span></a>
+              </li>
+              <li class="main-menu">
+                <a href="../service/neul_silver_care.html" class="nav-toggle"><span>Service</span></a>
+              </li>
+              <li class="main-menu">
+                <a href="../product/band.html" class="nav-toggle"><span>Product</span></a>
+              </li>
+              <li class="main-menu">
+                <a href="../news/press_release.html" class="nav-toggle"><span>News</span></a>
+              </li>
+              <li class="main-menu" onclick="common.channelTalk();">
+                <a href="#" class="nav-toggle no-depth"><span>Contact us</span></a>
+              </li>
+            </ul>
+            <div class="etc-menu">
+              <!-- 2023-12-27 v.08_20231227 변경사항 적용 -->
+              <button type="button" class="btn btn-icon demo" onclick="common.channelTalk();">DEMO 신청</button>
+              <!-- [D]: 활성화일 경우 .active 추가 -->
+              <div class="lang">
+                <a href="#" class="btn-lang"></a>
+                <ul>
+                  <li>
+                    <a href="#">한국어</a>
+                  </li>
+                  <li>
+                    <a href="#">English</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- 모바일 버튼 -->
+          <button type="button" class="btn-drawer"></button>
+        </div>
+        <div class="sub-bg"></div>
+      </div>
+      <div id="container">
+        <div class="main company">
+
+          <div class="subtitle">
+            돌봄과 예방이 필요한 모두에게, <br>늘 함께합니다.
+          </div>
+
+          <div class="section section1">
+            <div class="tit-set">
+              <div class="tit">We are always with  <br />everyone in need of care.</div>
+            </div>
+            <div class="img-set"></div>
+          </div>
+
+          <div class="section section2 trigger">
+            <div class="wrap">
+              <div class="tit-set">
+                <div class="tit"><span>소중한 사람</span>에 대한 마음이 기술을 만났습니다. <br>
+                  모두의 보다 나은 케어를 위해 <span>사람을 잇고 세상을 연결</span>합니다.</div>
+              </div>
+              <div class="content-box">
+                <div class="wrap">
+                  <div class="sublogo"></div>
+                  <div class="content">
+                    <h4>서비스 도메인</h4>
+                    <!-- 2024-02-20 수정 시작 -->
+                    <ul>
+                      <li class="img1"><span>요양병원</span></li>
+                      <li class="img2"><span>요양원</span></li>
+                      <li class="img3"><span>독거노인</span></li>
+                    </ul>
+                  </div>
+                  <div class="content">
+                    <h4>활용기술</h4>
+                    <ul>
+                      <li class="img4"><span>AI</span></li>
+                      <li class="img5"><span>Wearable Device</span></li>
+                      <li class="img6"><span>IoT</span></li>
+                    </ul>
+                    <!-- 2024-02-20 수정 끝 -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+           <div class="section section3 trigger">
+            <div class="wrap">
+              <div class="tit-set">
+                <div class="tit"><span>더 행복하고 안전한 세상</span>을 만들기 위해 도전합니다. <br>
+                  늘 서비스는 <span>AI전문기업 비투엔</span>이 선보이는 첫 플랫폼 서비스입니다.
+                </div>
+              </div>
+              <div class="content">
+                <!-- 2024-02-20 수정 시작 -->
+                <ul>
+                  <li>
+                    <div class="txt-linear txt-linear1">Predictive</div>
+                    <div class="txt">우리는 곁의 소중한 이들을 위한<br /> <span>예측 기반의 디지털 케어</span>를 실현합니다.</div>
+                  </li>
+                  <li>
+                    <div class="txt-linear txt-linear2">Pro-Active</div>
+                    <div class="txt"><span>한 발 앞선 케어</span>를 지향합니다.</div>
+                  </li>
+                  <li>
+                    <div class="txt-linear txt-linear3">Preventive</div>
+                    <div class="txt"><span>예방을 통해 건강한 삶</span>을 지킵니다.</div>
+                  </li>
+                </ul>
+                <!-- 2024-02-20 수정 끝 -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- footer -->
+      <div id="footer">
+        <div class="footer-wrap">
+          <div class="footer-logo"></div>
+          <div class="footer-info">
+            <p>상호명 <span>(주)비투엔</span> 대표이사 : <span>안태일</span></p>
+            <p class="address">
+              (07255) 서울특별시 영등포구 선유로 146<br />
+              이앤씨드림타워 2층
+            </p>
+            <ul class="contact-list">
+              <li class="email">
+                <a href="mailto:neulcare@b2en.com">neulcare@b2en.com</a>
+              </li>
+              <li class="tel">02. 2636. 0805</li>
+              <li>사업자 등록번호 : 302-87-00950</li>
+            </ul>
+          </div>
+          <p class="copyright">ⓒB2EN CO.LTD.ALL RIGHTS RESERVED.</p>
+        </div>
+      </div>
+    </div>
+    <!-- //#wrap -->
+  </body>
+</html>

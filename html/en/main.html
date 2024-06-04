@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>NEUL Digital Care Platform</title>
+    <meta charset="utf-8" />
+    <meta name="title" content="NEUL Digital Care Platform" />
+    <meta name="Description" content="NEUL Digital Care Platform" />
+    <meta name="keywords" content="NEUL Digital Care Platform" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta property="og:title" content="늘 마음 놓고 돌봄을 시작하다. 늘 NEUL" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.neulcare.com/" />
+    <meta property="og:image" content="../../assets/common/images/neul_opengraph.png" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" />
+    <link rel="icon" href="../../assets/common/assets/images/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="57x57" href="../../assets/common/images/favicon/apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="../../assets/common/images/favicon/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="../../assets/common/images/favicon/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="../../assets/common/images/favicon/apple-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="../../assets/common/images/favicon/apple-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="../../assets/common/images/favicon/apple-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="../../assets/common/images/favicon/apple-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="../../assets/common/images/favicon/apple-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../../assets/common/images/favicon/apple-icon-180x180.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="../../assets/common/images/favicon/android-icon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../../assets/common/images/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="../../assets/common/images/favicon/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/common/images/favicon/favicon-16x16.png" />
+    <link rel="stylesheet" type="text/css" href="../../assets/en/css/style.css" />
+
+    <!-- 플러그인 순서중요-->
+    <script type="text/javascript" src="../../assets/common/js/jquery-3.6.3.min.js"></script>
+    <script type="text/javascript" src="../../assets/common/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../../assets/common/js/greensock/gsap.min.js"></script>
+    <script type="text/javascript" src="../../assets/common/js/greensock/TweenMax.min.js"></script>
+    <script type="text/javascript" src="../../assets/common/js/greensock/ScrollTrigger.min.js"></script>
+    <script type="text/javascript" src="../../assets/common/js/ScrollMagic.min.js"></script>
+    <script type="text/javascript" src="../../assets/common/js/animation.gsap.js"></script>
+    <script type="text/javascript" src="../../assets/common/js/debug.addIndicators.min.js"></script>
+
+    <!-- 자체 자스 -->
+    <script type="text/javascript" src="../../assets/common/js/common.js"></script>
+    <script type="text/javascript" src="../../assets/en/js/ani.js"></script>
+    <script type="text/javascript">
+      $(function () {});
+    </script>
+  </head>
+  <body>
+    <!-- #wrap -->
+    <div id="wrap">
+      <!-- header -->
+      <div class="headerwrap">
+        <div id="header">
+          <h1 class="logo">
+            <a href="main.html"><img src="../../assets/common/images/logo.svg" alt="NEUL" /></a>
+          </h1>
+          <div class="gnb">
+            <ul class="nav">
+              <li class="main-menu">
+                <a href="neul/company.html" class="toggle none">NEUL</a>
+                <ul class="sub-menu"></ul>
+              </li>
+              <li class="main-menu">
+                <a href="#" class="toggle"
+                  >Service
+                  <span class="arrow show">
+                    <svg viewBox="0 -8 10 16">
+                      <path d="M3.43653 5.16429L0.234995 1.96276C-0.267004 1.46076 0.088532 0.602417 0.798466 0.602417H7.20153C7.91147 0.602417 8.267 1.46076 7.76501 1.96276L4.56347 5.16429C4.25227 5.47549 3.74773 5.47549 3.43653 5.16429Z" fill="#1E1E1E" /></svg
+                  ></span>
+                  <span class="arrow">
+                    <svg viewBox="0 -8 10 16">
+                      <path d="M5.06347 0.836076L8.26501 4.03761C8.767 4.53961 8.41147 5.39795 7.70153 5.39795L1.29847 5.39795C0.588532 5.39795 0.232996 4.53961 0.734995 4.03761L3.93653 0.836076C4.24773 0.524879 4.75227 0.524879 5.06347 0.836076Z" fill="#1E1E1E" />
+                    </svg> </span
+                ></a>
+                <ul class="sub-menu">
+                  <li>
+                    <a href="service/neul_silver_care.html" class="toggle-sub">NEUL Silver Care</a>
+                  </li>
+                  <li>
+                    <a href="service/assessment.html" class="toggle-sub">적정성 평가</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="main-menu">
+                <a href="#" class="toggle"
+                  >Product
+                  <span class="arrow show">
+                    <svg viewBox="0 -8 10 16">
+                      <path d="M3.43653 5.16429L0.234995 1.96276C-0.267004 1.46076 0.088532 0.602417 0.798466 0.602417H7.20153C7.91147 0.602417 8.267 1.46076 7.76501 1.96276L4.56347 5.16429C4.25227 5.47549 3.74773 5.47549 3.43653 5.16429Z" fill="#1E1E1E" /></svg
+                  ></span>
+                  <span class="arrow">
+                    <svg viewBox="0 -8 10 16">
+                      <path d="M5.06347 0.836076L8.26501 4.03761C8.767 4.53961 8.41147 5.39795 7.70153 5.39795L1.29847 5.39795C0.588532 5.39795 0.232996 4.53961 0.734995 4.03761L3.93653 0.836076C4.24773 0.524879 4.75227 0.524879 5.06347 0.836076Z" fill="#1E1E1E" />
+                    </svg> </span
+                ></a>
+                <ul class="sub-menu">
+                  <li>
+                    <a href="#" class="toggle-sub">NEUL Band</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="main-menu">
+                <a href="#" class="toggle"
+                  >Work
+                  <span class="arrow show">
+                    <svg viewBox="0 -8 10 16">
+                      <path d="M3.43653 5.16429L0.234995 1.96276C-0.267004 1.46076 0.088532 0.602417 0.798466 0.602417H7.20153C7.91147 0.602417 8.267 1.46076 7.76501 1.96276L4.56347 5.16429C4.25227 5.47549 3.74773 5.47549 3.43653 5.16429Z" fill="#1E1E1E" /></svg
+                  ></span>
+                  <span class="arrow">
+                    <svg viewBox="0 -8 10 16">
+                      <path d="M5.06347 0.836076L8.26501 4.03761C8.767 4.53961 8.41147 5.39795 7.70153 5.39795L1.29847 5.39795C0.588532 5.39795 0.232996 4.53961 0.734995 4.03761L3.93653 0.836076C4.24773 0.524879 4.75227 0.524879 5.06347 0.836076Z" fill="#1E1E1E" />
+                    </svg> </span
+                ></a>
+                <ul class="sub-menu">
+                  <li>
+                    <a href="#" class="toggle-sub">요양병원</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="main-menu">
+                <a href="#" class="toggle"
+                  >News
+                  <span class="arrow show">
+                    <svg viewBox="0 -8 10 16">
+                      <path d="M3.43653 5.16429L0.234995 1.96276C-0.267004 1.46076 0.088532 0.602417 0.798466 0.602417H7.20153C7.91147 0.602417 8.267 1.46076 7.76501 1.96276L4.56347 5.16429C4.25227 5.47549 3.74773 5.47549 3.43653 5.16429Z" fill="#1E1E1E" /></svg
+                  ></span>
+                  <span class="arrow">
+                    <svg viewBox="0 -8 10 16">
+                      <path d="M5.06347 0.836076L8.26501 4.03761C8.767 4.53961 8.41147 5.39795 7.70153 5.39795L1.29847 5.39795C0.588532 5.39795 0.232996 4.53961 0.734995 4.03761L3.93653 0.836076C4.24773 0.524879 4.75227 0.524879 5.06347 0.836076Z" fill="#1E1E1E" />
+                    </svg> </span
+                ></a>
+                <ul class="sub-menu">
+                  <li>
+                    <a href="news/press_release.html" class="toggle-sub">보도자료</a>
+                  </li>
+                  <li>
+                    <a href="news/data_list.html" class="toggle-sub">자료실</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="main-menu">
+                <a href="#" class="toggle"
+                  >Help
+                  <span class="arrow show">
+                    <svg viewBox="0 -8 10 16">
+                      <path d="M3.43653 5.16429L0.234995 1.96276C-0.267004 1.46076 0.088532 0.602417 0.798466 0.602417H7.20153C7.91147 0.602417 8.267 1.46076 7.76501 1.96276L4.56347 5.16429C4.25227 5.47549 3.74773 5.47549 3.43653 5.16429Z" fill="#1E1E1E" /></svg
+                  ></span>
+                  <span class="arrow">
+                    <svg viewBox="0 -8 10 16">
+                      <path d="M5.06347 0.836076L8.26501 4.03761C8.767 4.53961 8.41147 5.39795 7.70153 5.39795L1.29847 5.39795C0.588532 5.39795 0.232996 4.53961 0.734995 4.03761L3.93653 0.836076C4.24773 0.524879 4.75227 0.524879 5.06347 0.836076Z" fill="#1E1E1E" />
+                    </svg> </span
+                ></a>
+                <ul class="sub-menu">
+                  <li>
+                    <a href="help/notice_list.html" class="toggle-sub">공지사항</a>
+                  </li>
+                  <li>
+                    <a href="help/faq_list.html" class="toggle-sub">FAQ</a>
+                  </li>
+                  <li>
+                    <a href="#" class="toggle-sub">문의</a>
+                  </li>
+                  <li>
+                    <a href="#" class="toggle-sub">Contact Us</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <div class="etc-menu">
+              <button type="button" class="btn btn-round demo" onclick="common.openModalPopup('pop-inquiry');"><img style="width: 18px; height: auto" src="../../assets/common/images/icon/(ICON) Free Trial.png" alt="" /><span>DEMO 신청</span></button>
+              <div class="lang">
+                <!-- [D]: 활성화일 경우 .active 추가 -->
+                <button type="button" class="btn btn-lang active">KO</button>
+                <button type="button" class="btn btn-lang">EN</button>
+              </div>
+            </div>
+          </div>
+          <!-- 모바일 버튼 -->
+          <div class="btn-drawer">
+            <span class="show">
+              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+                <g clip-path="url(#clip0_3424_63948)">
+                  <rect x="1" y="1" width="34" height="34" rx="17" fill="white" stroke="#3848A2" stroke-width="2" />
+                  <rect x="8" y="21" width="20" height="2" fill="#3848A2" />
+                  <rect x="8" y="13" width="20" height="2" fill="#3848A2" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_3424_63948">
+                    <rect width="36" height="36" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+                <g clip-path="url(#clip0_3424_63999)">
+                  <rect x="1" y="1" width="34" height="34" rx="17" fill="white" stroke="#3848A2" stroke-width="2" />
+                  <rect x="10.2217" y="24.364" width="20" height="2" transform="rotate(-45 10.2217 24.364)" fill="#3848A2" />
+                  <rect x="11.6357" y="10.2218" width="20" height="2" transform="rotate(45 11.6357 10.2218)" fill="#3848A2" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_3424_63999">
+                    <rect width="36" height="36" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div id="container">
+        <div class="main">
+          <!-- intro 시작 -->
+          <div class="intro">
+            <div class="intro-section">
+              <div class="content">
+                <div class="txt-section">
+                  <div class="txtwrap1">
+                    <div class="txt-set t1">
+                      <div class="txt txt1">늘</div>
+                      <div class="txt txt2">더 건강한</div>
+                      <div class="txt txt3">삶을 위해</div>
+                    </div>
+                  </div>
+                  <div class="txtwrap2">
+                    <div class="txt-set t2">
+                      <div class="txt txt1">늘</div>
+                      <div class="txt txt2">더 행복한</div>
+                      <div class="txt txt3">미래를 위해</div>
+                    </div>
+                  </div>
+                  <div class="txtwrap3">
+                    <div class="txt-set t3">
+                      <div class="txt txt1">늘</div>
+                      <div class="txt txt2">더 좋은</div>
+                      <div class="txt txt3">서비스를 위해</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 시퀀스인가 그거 -->
+              <div class="bg-section">
+                <div class="img-set">
+                  <img class="testimg" src="../../assets/common/images/sequence/sequence_1.jpg" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- intro 끝 -->
+
+          <!-- start 배너 시작 -->
+          <div class="startbanner">
+            <div class="startbanner-wrap">
+              <div class="startbanner-txtbx">
+                <div>한 발 앞선 돌봄을 향하여</div>
+                <h2>Digital Pro-Active Care</h2>
+                <p>
+                  우리는 소중한 이들에 대한 안전을<br class="mobileOnly-i" />
+                  늘 생각합니다.<br />
+                  그리고 모두의 보다 나은 케어를 위해<br class="mobileOnly-i" />
+                  행동합니다.
+                </p>
+              </div>
+              <img src="../../assets/common/images/PART_07_01_02 2.png" alt="" />
+            </div>
+          </div>
+          <!-- start 배너 끝 -->
+
+          <!-- product 시작 -->
+          <div class="product contentP">
+            <section class="product-sc">
+              <a href=""
+                ><div class="productwrap">
+                  <div class="product-topbx">
+                    <div class="product-imgbx">
+                      <img src="../../assets/common/images/실시간 환자상태 모니터링.png" alt="늘 실비 케어" />
+                    </div>
+                    <div class="product-txtbx">
+                      <h3>늘 실비 케어</h3>
+                      <p>AI 기반 요양병원 환자 위험도 예측.<br />예방을 통한 한 발 앞선 돌봄.</p>
+                      <div class="barogagi">
+                        <div>바로가기</div>
+                        <div>
+                          <img src="../../assets/common/images/circlearrow.svg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product-bottombx">
+                    <div class="product-libx">
+                      <ul>
+                        <li>
+                          <h4>실시간 환자 모니터링</h4>
+                          <p>환자의 실시간 상태와 <br />공간의 환경 정보, 위치 정보를 <br />실시간으로 확인</p>
+                        </li>
+                        <li>
+                          <h4>AI 위험 예측 기반 환자 위험 관리</h4>
+                          <p>
+                            개인화된 AI위험 예측 알고리즘으로 <br />위험 원인 분석 및 고위험 환자<br class="mobileOnly-i" />
+                            집중 관리 지원
+                          </p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div></a
+              >
+            </section>
+
+            <section class="product-sc">
+              <a href=""
+                ><div class="productwrap">
+                  <div class="product-topbx">
+                    <div class="product-imgbx">
+                      <img src="../../assets/common/images/환자 돌봄 프로세스 관리를 통한 적정성 평가 대응 1.png" alt="늘 실비 케어" />
+                    </div>
+                    <div class="product-txtbx">
+                      <h3>늘 적정성 평가 관리</h3>
+                      <p>요양병원 적정성 평가.<br />숫자가 아닌, 프로세스 관리가 필요.</p>
+                      <div class="barogagi">
+                        <div>바로가기</div>
+                        <div>
+                          <img src="../../assets/common/images/circlearrow.svg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product-bottombx">
+                    <div class="product-libx">
+                      <ul>
+                        <li>
+                          <h4>적정성 평가 목표 수립</h4>
+                          <p>평가 지표별 관리 포인트 확인과 <br />데이터 기반 목표 설정 지원</p>
+                        </li>
+
+                        <li>
+                          <h4>월별 결과 분석 및 시뮬레이션</h4>
+                          <p>
+                            데이터 연동으로 결과 입력 자동화 <br />목표 등급 시뮬레이션 및<br class="mobileOnly-i" />
+                            Action 플랜 제공
+                          </p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div></a
+              >
+            </section>
+            <section class="product-sc">
+              <a href="">
+                <div class="productwrap">
+                  <div class="product-topbx">
+                    <div class="product-imgbx">
+                      <img src="../../assets/common/images/PART_07_Smartband_01.png" alt="늘 실비 케어" />
+                    </div>
+                    <div class="product-txtbx">
+                      <h3>늘 스마트 밴드</h3>
+                      <p>더 안전하게 믿을 수 있게.<br />환자를 고려한 친환경 소재와 디자인.</p>
+                      <div class="barogagi">
+                        <div>바로가기</div>
+                        <div>
+                          <img src="../../assets/common/images/circlearrow.svg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product-bottombx">
+                    <div class="product-libx">
+                      <ul>
+                        <li>
+                          <h4>작지만 다양한 바이탈 정보 수집</h4>
+                          <p>심박수, 체온, 산소포화도, 혈압, 호흡수, <br class="mobileOnly-i" />걸음 수 등 <br class="dtOnly" />정보수집</p>
+                        </li>
+                        <li>
+                          <h4>응급호출 기능</h4>
+                          <p>직관적인 응급 버튼을 통한 <br />직접 도움 요청 가능</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </section>
+          </div>
+          <!-- product 끝 -->
+          <!-- news시작 -->
+          <div class="news contentP">
+            <div class="news-contentwrap">
+              <div class="news-content">
+                <h3>NEUL 서비스의 가장 빠른 소식</h3>
+                <div class="news-slide">
+                  <ul class="news-target">
+                    <li>
+                      <div class="news-slide-textbx">
+                        <div>비투엔, KIMES 2023서 AI 기반 디지털 케어 플랫폼 ‘NEUL(늘)’ 알린다.</div>
+                        <p>2023.03.23</p>
+                      </div>
+                      <div class="news-slide-imgbx">
+                        <img src="../../assets/common/images/news1.png" alt="" />
+                      </div>
+                    </li>
+                    <li>
+                      <div class="news-slide-textbx">
+                        <div>[인터뷰]'NEUL(늘)' 실버케어 서비스, '광주·전남 확산'의 첨병될 것</div>
+                        <p>2023.03.23</p>
+                      </div>
+                      <div class="news-slide-imgbx">
+                        <img src="../../assets/common/images/news2.png" alt="" />
+                      </div>
+                    </li>
+                    <li>
+                      <div class="news-slide-textbx">
+                        <div>비투엔, AI 디지털실버케어 '늘 실버케어' 상반기 론칭</div>
+                        <p>2023.03.23</p>
+                      </div>
+                      <div class="news-slide-imgbx">
+                        <img src="../../assets/common/images/news3.png" alt="" />
+                      </div>
+                    </li>
+                    <li>
+                      <div class="news-slide-textbx">
+                        <div>[인터뷰] 비투엔, 마지막 여생의 길을 더욱 아름답게</div>
+                        <p>2023.03.23</p>
+                      </div>
+                      <div class="news-slide-imgbx">
+                        <img src="../../assets/common/images/news4.png" alt="" />
+                      </div>
+                    </li>
+                    <li>
+                      <div class="news-slide-textbx">
+                        <div>비투엔, KIMES 2023서 AI 기반 디지털 케어 플랫폼 ‘NEUL(늘)’ 알린다.</div>
+                        <p>2023.03.23</p>
+                      </div>
+                      <div class="news-slide-imgbx">
+                        <img src="../../assets/common/images/news1.png" alt="" />
+                      </div>
+                    </li>
+                    <li>
+                      <div class="news-slide-textbx">
+                        <div>[인터뷰]'NEUL(늘)' 실버케어 서비스, '광주·전남 확산'의 첨병될 것</div>
+                        <p>2023.03.23</p>
+                      </div>
+                      <div class="news-slide-imgbx">
+                        <img src="../../assets/common/images/news2.png" alt="" />
+                      </div>
+                    </li>
+                    <li>
+                      <div class="news-slide-textbx">
+                        <div>비투엔, AI 디지털실버케어 '늘 실버케어' 상반기 론칭</div>
+                        <p>2023.03.23</p>
+                      </div>
+                      <div class="news-slide-imgbx">
+                        <img src="../../assets/common/images/news3.png" alt="" />
+                      </div>
+                    </li>
+                    <li>
+                      <div class="news-slide-textbx">
+                        <div>[인터뷰] 비투엔, 마지막 여생의 길을 더욱 아름답게</div>
+                        <p>2023.03.23</p>
+                      </div>
+                      <div class="news-slide-imgbx">
+                        <img src="../../assets/common/images/news4.png" alt="" />
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <span class="newsbtn">'늘' 더 많은 소식 보기
+                  <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="16" viewBox="0 0 32 16" fill="none">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M24.5286 1.35002C24.1381 0.959498 23.505 0.959498 23.1144 1.35002C22.7239 1.74055 22.7239 2.37371 23.1144 2.76424L27.35 6.99982H1.82153C1.26925 6.99982 0.821533 7.44753 0.821533 7.99982C0.821533 8.5521 1.26925 8.99982 1.82153 8.99982H27.35L23.1144 13.2354C22.7239 13.6259 22.7239 14.2591 23.1144 14.6496C23.505 15.0402 24.1381 15.0402 24.5286 14.6496L30.3003 8.87798C30.4687 8.78598 30.6077 8.64696 30.6997 8.47857L31.1784 7.99983L30.6997 7.5211C30.6077 7.35268 30.4687 7.21364 30.3003 7.12163L24.5286 1.35002Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <!-- news 끝 -->
+          <!-- contact 시작 -->
+          <div class="contact contentP">
+            <h2>고객사례</h2>
+            <div class="contact-cont">
+              <div class="flowbx-wrap">
+                <div class="flowbx">
+                  <div>
+                    <img src="../../assets/common/images/IMAGE.svg" alt="" />
+                  </div>
+                  <div>
+                    <small>A요양병원</small>
+                    <p>"환자별 위험 지표를 통해 고위험군 환자의 체계적인 관리가 가능해졌어요."</p>
+                  </div>
+                </div>
+                <div class="flowbx">
+                  <div>
+                    <img src="../../assets/common/images/IMAGE (1).svg" alt="" />
+                  </div>
+                  <div>
+                    <small>B요양병원</small>
+                    <p>“응급상황 발생 시 즉시 알람을 받을 수 있고, 환자의 상태나 위치 확인이 가능해 빠른 대응이 가능해졌어요”</p>
+                  </div>
+                </div>
+                <div class="flowbx">
+                  <div>
+                    <img src="../../assets/common/images/IMAGE.svg" alt="" />
+                  </div>
+                  <div>
+                    <small>C요양병원</small>
+                    <p>"환자별 위험 지표를 통해 고위험군 환자의 체계적인 관리가 가능해졌어요."</p>
+                  </div>
+                </div>
+                <div class="flowbx">
+                  <div>
+                    <img src="../../assets/common/images/IMAGE (1).svg" alt="" />
+                  </div>
+                  <div>
+                    <small>D요양병원</small>
+                    <p>“응급상황 발생 시 즉시 알람을 받을 수 있고, 환자의 상태나 위치 확인이 가능해 빠른 대응이 가능해졌어요”</p>
+                  </div>
+                </div>
+              </div>
+              <div class="flowbx-wrap dtOnly-f">
+                <div class="flowbx">
+                  <div>
+                    <img src="../../assets/common/images/IMAGE (2).svg" alt="" />
+                  </div>
+                  <div>
+                    <small>A요양병원</small>
+                    <p>"적정성평가 준비 시에 어떤 지표를 어떻게 관리해야 할 지 한눈에 보여 등급이 올라갔어요."</p>
+                  </div>
+                </div>
+                <div class="flowbx">
+                  <div>
+                    <img src="../../assets/common/images/IMAGE.svg" alt="" />
+                  </div>
+                  <div>
+                    <small>B요양병원</small>
+                    <p>"환자별 위험 지표를 통해 고위험군 환자의 체계적인 관리가 가능해졌어요."</p>
+                  </div>
+                </div>
+                <div class="flowbx">
+                  <div>
+                    <img src="../../assets/common/images/IMAGE (2).svg" alt="" />
+                  </div>
+                  <div>
+                    <small>C요양병원</small>
+                    <p>“적정성평가 준비 시에 어떤 지표를 어떻게 관리해야 할 지 한눈에 보여 등급이 올라갔어요”</p>
+                  </div>
+                </div>
+                <div class="flowbx">
+                  <div>
+                    <img src="../../assets/common/images/IMAGE.svg" alt="" />
+                  </div>
+                  <div>
+                    <small>D요양병원</small>
+                    <p>"환자별 위험 지표를 통해 고위험군 환자의 체계적인 관리가 가능해졌어요."</p>
+                  </div>
+                </div>
+              </div>
+              <div></div>
+            </div>
+          </div>
+          <!-- contact 끝 -->
+          <!-- banner 시작 -->
+          <div class="banner">
+            <div class="banner-txtbx">
+              <div>NEUL 서비스의 기술과<br />서비스에 대해 문의 하세요</div>
+            </div>
+            <div class="bannerbtn">
+              <span
+                >문의하기
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="16" viewBox="0 0 32 16" fill="none">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M24.5286 1.35002C24.1381 0.959498 23.505 0.959498 23.1144 1.35002C22.7239 1.74055 22.7239 2.37371 23.1144 2.76424L27.35 6.99982H1.82153C1.26925 6.99982 0.821533 7.44753 0.821533 7.99982C0.821533 8.5521 1.26925 8.99982 1.82153 8.99982H27.35L23.1144 13.2354C22.7239 13.6259 22.7239 14.2591 23.1144 14.6496C23.505 15.0402 24.1381 15.0402 24.5286 14.6496L30.3003 8.87798C30.4687 8.78598 30.6077 8.64696 30.6997 8.47857L31.1784 7.99983L30.6997 7.5211C30.6077 7.35268 30.4687 7.21364 30.3003 7.12163L24.5286 1.35002Z"
+                      fill="white"
+                    />
+                  </svg>
+                </span>
+              </span>
+            </div>
+          </div>
+          <!-- banner 끝 -->
+        </div>
+      </div>
+      <!-- footer 시작 -->
+      <div class="footer">
+        <div class="footer-logo">
+          <img src="../../assets/common/images/logo.svg" alt="NEUL" />
+        </div>
+        <div class="footer-info">
+          <p class="address">07255 서울특별시 영등포구 선유로 146 이앤씨드림타워 2층</p>
+          <span class="dtOnly">|</span>
+          <ul class="contact">
+            <li class="email">
+              <a href="mailto:b2en@b2en.com">
+                <span>
+                  <img src="../../assets/common/images/icon/(ICON) E-MAIL.png" alt="" />
+                </span>
+                <span>b2en@b2en.com</span>
+              </a>
+            </li>
+            <li class="tel">
+              <span>
+                <img src="../../assets/common/images/icon/(ICON) TEL.png" alt="" />
+              </span>
+              <span>02. 2636. 0090</span>
+            </li>
+          </ul>
+        </div>
+        <p class="copyright">ⓒb2en. All Rights Reserved.</p>
+      </div>
+      <!-- footer끝 -->
+    </div>
+    <!-- //#wrap -->
+
+    <!-- [D]: DEMO 신청 팝업 -->
+    <div class="popup pop-demo-app">
+      <div class="popup-header">
+        <button type="button" class="popup-close" onclick="common.closeModalPopup();"></button>
+        <h1 class="tit">
+          <strong>NEUL 실버 케어</strong>를<br />
+          <strong>무료로 체험</strong>해 보세요!
+        </h1>
+        <div class="stit">웹사이트에 설치하거나 다운로드 없이 <br />무료로 이용할 수 있습니다.</div>
+      </div>
+      <div class="popup-content">
+        <div class="inp-set type-btn">
+          <input type="text" class="inp" placeholder="안내 받으실 이메일을 입력해 주세요." />
+          <button type="button" class="btn btn-rect black sm">무료 체험하기</button>
+        </div>
+        <div class="con-box">
+          <h2 class="tit">이런 기관에 추천드립니다.</h2>
+          <ul class="reco-list">
+            <li>
+              <div class="txt">요양병원/실버타운 등<br /><strong>환자가 많아 더 효율적인 관리</strong>가 필요한 기관</div>
+            </li>
+            <li>
+              <div class="txt"><strong>요양병원 적정성 평가</strong>에 대한<br />대응이 어려운 기관</div>
+            </li>
+            <li>
+              <div class="txt">요양병원/실버타운 등<br /><strong>고객 유치를 위한 적극적인 활동</strong>이 필요한 기관</div>
+            </li>
+          </ul>
+        </div>
+        <div class="con-box">
+          <h2 class="tit">무료 체험은 어떻게 진행되나요?</h2>
+          <ol class="order-list">
+            <li><strong>1. </strong>안내 받을 이메일 주소 입력</li>
+            <li><strong>2. </strong>안내 메일을 통해 체험을 위한 부가 정보 입력</li>
+            <li><strong>3. </strong>체험 URL 및 계정정보 발급</li>
+            <li><strong>4. </strong>체험하기</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <!-- [D]: 문의하기 팝업 -->
+    <div class="popup pop-inquiry">
+      <div class="popup-header">
+        <button type="button" class="popup-close" onclick="common.closeModalPopup();">×</button>
+        <h1 class="tit"><strong>NEUL Service</strong><br />무엇이든 물어보세요.</h1>
+      </div>
+      <div class="popup-content">
+        <div class="form-wrap">
+          <div class="con-box">
+            <ul class="form-list">
+              <li>
+                <div class="tit necessary"><strong>이름</strong></div>
+                <div class="con">
+                  <input type="text" name="" id="" class="inp" placeholder="홍길동" />
+                </div>
+              </li>
+              <li>
+                <div class="tit necessary"><strong>회사명</strong><span class="cmt">기관/단체명</span></div>
+                <div class="con">
+                  <input type="text" name="" id="" class="inp" placeholder="" />
+                </div>
+              </li>
+              <li>
+                <div class="tit necessary"><strong>이메일</strong></div>
+                <div class="con">
+                  <input type="text" name="" id="" class="inp" placeholder="" />
+                </div>
+              </li>
+              <li>
+                <div class="tit necessary"><strong>전화번호</strong></div>
+                <div class="con">
+                  <input type="text" name="" id="" class="inp" placeholder="" />
+                </div>
+              </li>
+              <li>
+                <div class="tit necessary"><strong>유입경로</strong></div>
+                <div class="con">
+                  <div class="slct">
+                    <select>
+                      <option>유입경로를 선택하세요.</option>
+                      <option>인터넷</option>
+                      <option>지인</option>
+                      <option>길다가다</option>
+                    </select>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="tit necessary"><strong>문의유형</strong></div>
+                <div class="con">
+                  <div class="slct">
+                    <select>
+                      <option>문의유형를 선택하세요.</option>
+                      <option>문의유형1</option>
+                      <option>문의유형2</option>
+                      <option>문의유형3</option>
+                    </select>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="tit necessary"><strong>문의내용</strong></div>
+                <div class="con">
+                  <textarea name="" id="" cols="" rows=""></textarea>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- 약관 전체 동의 -->
+          <div class="terms-agree">
+            <div class="chk-box">
+              <input type="checkbox" name="agree" id="all" checked />
+              <label for="all"></label>
+              <label for="all">약관 전체 동의</label>
+            </div>
+            <div class="chk-set">
+              <div class="chk-box link">
+                <input type="checkbox" name="agree" id="chk1" />
+                <label for="chk1">개인정보 수집 및 이용 동의 (필수)<a href="#" target="_blank"></a></label>
+              </div>
+              <div class="chk-box link">
+                <input type="checkbox" name="agree" id="chk2" />
+                <label for="chk2">홍보 및 마케팅 활용 동의 (선택)<a href="#" target="_blank"></a></label>
+                <span class="cmt">업계 주요 트렌드 및 동향을 받아보실 수 있습니다.</span>
+              </div>
+            </div>
+          </div>
+          <div class="btn-area">
+            <button type="button" class="btn btn-rect md navy">바로 문의하기</button>
+          </div>
+        </div>
+        <div class="contact">
+          <h2 class="tit">오시는 길</h2>
+          <div class="map">
+            <img src="../../assets/common/images/temp/temp_map.png" alt="임시 이미지" />
+          </div>
+          <ul class="contact-info">
+            <li>
+              <strong>주소</strong>
+              서울시 선유로 146 이앤씨드림타워 210호 (07255)
+            </li>
+            <li>
+              <strong>이메일</strong>
+              neulcare@b2en.com
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="scrolltop">
+      <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+        <g clip-path="url(#clip0_4606_10111)">
+          <rect x="1" y="1" width="34" height="34" rx="17" fill="white" stroke="#3848A2" stroke-width="2" />
+          <rect x="8.40039" y="21.8995" width="14" height="2" transform="rotate(-45 8.40039 21.8995)" fill="#3848A2" />
+          <path d="M18.5 12L28.3995 21.8995L26.9853 23.3137L17.0858 13.4142L18.5 12Z" fill="#3848A2" />
+        </g>
+        <defs>
+          <clipPath id="clip0_4606_10111">
+            <rect width="36" height="36" fill="white" />
+          </clipPath>
+        </defs>
+      </svg>
+    </div>
+
+    <div class="loading">
+      <div class="bg">
+        <span class="bar"></span>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>NEUL Digital Care Platform</title>
+    <meta charset="utf-8" />
+    <meta name="title" content="NEUL Digital Care Platform" />
+    <meta name="Description" content="NEUL Digital Care Platform" />
+    <meta name="keywords" content="NEUL Digital Care Platform" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta property="og:title" content="늘 마음 놓고 돌봄을 시작하다. 늘 NEUL" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.neulcare.com/" />
+    <meta property="og:image" content="../assets/common/images/neul_opengraph.png" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" />
+    <link rel="icon" href="./assets/common/images/favicon/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="./assets/common/css/style.css" />
+    <!-- 플러그인 순서중요-->
+    <script type="text/javascript" src="./assets/common/js/jquery-3.6.3.min.js"></script>
+    <script type="text/javascript" src="./assets/common/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="./assets/common/js/greensock/gsap.min.js"></script>
+    <script type="text/javascript" src="./assets/common/js/greensock/TweenMax.min.js"></script>
+    <script type="text/javascript" src="./assets/common/js/greensock/ScrollTrigger.min.js"></script>
+    <script type="text/javascript" src="./assets/common/js/ScrollMagic.min.js"></script>
+    <script type="text/javascript" src="./assets/common/js/animation.gsap.js"></script>
+    <script type="text/javascript" src="./assets/common/js/debug.addIndicators.min.js"></script>
+    <script type="text/javascript" src="./assets/common/js/ScrollToPlugin.min.js"></script>
+    <!-- 자체 자스 -->
+    <script type="text/javascript" src="./assets/common/js/common.js"></script>
+    <script type="text/javascript" src="./assets/common/js/ani.js"></script>
+    <script type="text/javascript">
+      $(function () {
+        // 팝업 알림창 실행코드
+        // common.openModalPopup('pop-alert');
+      });
+    </script>
+  </head>
+  <body>
+    <!-- #wrap -->
+    <div id="wrap">
+      <!-- header -->
+      <div id="header">
+        <div class="header-wrap">
+          <h1 class="logo">
+            <a href="index.html"><img src="./assets/common/images/logo_w.svg" alt="NEUL" /></a>
+            <a href="index.html"><img src="./assets/common/images/logo_b.svg" alt="NEUL" /></a>
+          </h1>
+          <div class="gnb">
+            <ul class="nav">
+              <li class="main-menu">
+                <!-- [D]: nav-toggle에 active 클래스 추가 시 활성화 -->
+                <a href="./html/ko/neul/company.html" class="nav-toggle no-depth"><span>About</span></a>
+              </li>
+              <li class="main-menu">
+                <a href="./html/ko/service/neul_silver_care.html" class="nav-toggle"><span>Service</span></a>
+              </li>
+              <li class="main-menu">
+                <a href="./html/ko/product/band.html" class="nav-toggle"><span>Product</span></a>
+              </li>
+              <li class="main-menu">
+                <a href="./html/ko/news/press_release.html" class="nav-toggle"><span>News</span></a>
+              </li>
+              <li class="main-menu" onclick="common.channelTalk();">
+                <a href="" class="nav-toggle no-depth"><span>Contact us</span></a>
+              </li>
+            </ul>
+            <div class="etc-menu">
+              <!-- 2023-12-27 v.08_20231227 변경사항 적용 -->
+              <button type="button" class="btn btn-icon demo" onclick="common.channelTalk();">DEMO 신청</button>
+              <!-- [D]: 활성화일 경우 .active 추가 -->
+              <div class="lang">
+                <a href="#" class="btn-lang"></a>
+                <ul>
+                  <li>
+                    <a href="#">한국어</a>
+                  </li>
+                  <li>
+                    <a href="#">English</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- 모바일 버튼 -->
+          <button type="button" class="btn-drawer"></button>
+        </div>
+        <div class="sub-bg"></div>
+      </div>
+      <div id="container">
+        <div class="main">
+          <!-- intro -->
+          <div class="intro-section">
+            <!-- 영상대체 -->
+            <div class="intro-mp4" style="display: block">
+              <!-- 2023-12-04 비디오태그 autoplay , loop 속성 제거 -->
+              <!-- dt영상 -->
+              <video class="video" type="video/mp4" playsinline muted src="./assets/common/mp4/brandsite_PC.mp4"></video>
+              <!-- 2023-11-21 중간단계 영상추가 -->
+              <video class="video" type="video/mp4" playsinline muted src="./assets/common/mp4/brandsite_PC.mp4"></video>
+              <!-- 모바일영상 -->
+              <video class="video" type="video/mp4" playsinline muted src="./assets/common/mp4/brandsite_M.mp4"></video>
+            </div>
+            <!-- 타이틀 영역 -->
+            <div class="tit-set" style="display: block">
+              <div class="tit-section set1">
+                <div class="txt txt1"><span class="span1">늘</span></div>
+                <div class="txt txt2"><span class="span1">더</span> <span class="span2">건강한</span></div>
+                <div class="txt txt3"><span class="span1">삶을</span> <span class="span2">위해</span></div>
+              </div>
+              <div class="tit-section set2">
+                <div class="txt txt1"><span class="span1">늘</span></div>
+                <div class="txt txt2"><span class="span1">더</span> <span class="span2">행복한</span></div>
+                <div class="txt txt3"><span class="span1">미래를</span> <span class="span2">위해</span></div>
+              </div>
+              <div class="tit-section set3">
+                <div class="txt txt1"><span class="span1">늘</span></div>
+                <div class="txt txt2"><span class="span1">더</span> <span class="span2">좋은</span></div>
+                <div class="txt txt3"><span class="span1">서비스를</span> <span class="span2">위해</span></div>
+              </div>
+              <div class="tit-section set4">
+                <div class="txt txt1"><span class="span1">늘</span> <span class="span2">우리</span> <span class="span3">모두의</span></div>
+                <div class="txt txt2"><span class="span1">보다</span> <span class="span2">나은</span></div>
+                <div class="txt txt3"><span class="span1">케어를</span> <span class="span2">위해</span></div>
+              </div>
+              <div class="tit-section set5">
+                <div class="txt txt1"><span class="span1">한발</span> <span class="span2">앞선</span></div>
+                <div class="txt txt2"><span class="span1">돌봄을</span> <span class="span2">향합니다</span></div>
+                <div class="txt txt2"><span style="opacity: 0">1</span></div>
+              </div>
+              <div class="tit-section set6">
+                <div class="txt txt1"><span class="span1">NEUL</span></div>
+                <div class="txt txt2"><span class="span1">SILVER</span> <span class="span2">CARE</span></div>
+                <div class="txt txt2"><span style="opacity: 0">1</span></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- main-section : 한 발 앞선 돌봄을 향하여 -->
+          <div class="main-section introduction">
+            <div class="row-content">
+              <div class="tit-set stit">
+                <div class="stit">한 발 앞선 돌봄을 향하여</div>
+                <div class="tit">Digital Pro-Active Care</div>
+                <div class="txt">우리는 소중한 이들의 <span>안전</span>을 늘 생각하고<br />보다 나은 <span>케어</span>를 위해 행동합니다.</div>
+                <button class="btn-readmore"><a href="./html/ko/neul/company.html">소개 바로가기</a></button>
+              </div>
+              <div class="content">
+                <img src="./assets/common/images/main/circle.png" alt="소개이미지" />
+                <img src="./assets/common/images/main/circle_m.png" alt="소개이미지" />
+              </div>
+            </div>
+          </div>
+
+          <!-- main-section : 실버케어 -->
+          <div class="main-section silvercare">
+            <div class="row-content">
+              <div class="content-top">
+                <div class="tit-set">
+                  <div class="tit">늘 실버케어는<br />AI 기반 요양병원 환자<br /><span>위험도 예측</span>과<br />예방을 통한 한발 앞선<br /><span>돌봄</span>이 가능합니다.</div>
+                  <button class="btn-readmore white"><a href="./html/ko/service/neul_silver_care.html">자세히 보기</a></button>
+                </div>
+                <div class="img-set">
+                  <img src="./assets/common/images/main/silvercare.png" alt="늘실버케어이미지" />
+                </div>
+              </div>
+              <div class="content-bottom">
+                <div class="tit">왜 늘 실버케어가 필요할까요?</div>
+              </div>
+            </div>
+            <!-- 6개씩 x 4 형태 -->
+            <ul class="slide">
+              <!-- 2023-12-27 모든 li에 a태그 제거-->
+              <li>
+                <div class="tit-set inner">
+                  <div class="tit">실시간 환자 모니터링</div>
+                </div>
+                <div class="img-set">
+                  <img src="./assets/common/images/main/icon1.png" alt="실버케어이미지" />
+                </div>
+              </li>
+              <li>
+                <div class="tit-set inner">
+                  <div class="tit">데이터 기반 환자 분석</div>
+                </div>
+                <div class="img-set">
+                  <img src="./assets/common/images/main/icon2.png" alt="실버케어이미지" />
+                </div>
+              </li>
+              <li>
+                <div class="tit-set inner">
+                  <div class="tit">AI 기반 예측 맞춤 돌봄</div>
+                </div>
+                <div class="img-set">
+                  <img src="./assets/common/images/main/icon3.png" alt="실버케어이미지" />
+                </div>
+              </li>
+              <li>
+                <div class="tit-set inner">
+                  <div class="tit">보호자 안심 서비스</div>
+                </div>
+                <div class="img-set">
+                  <img src="./assets/common/images/main/icon4.png" alt="실버케어이미지" />
+                </div>
+              </li>
+              <li>
+                <div class="tit-set inner">
+                  <div class="tit">체계적인 응급상황 관리</div>
+                </div>
+                <div class="img-set">
+                  <img src="./assets/common/images/main/icon5.png" alt="실버케어이미지" />
+                </div>
+              </li>
+              <li>
+                <div class="tit-set inner">
+                  <div class="tit">효율적인 간병인 관리 서비스</div>
+                </div>
+                <div class="img-set">
+                  <img src="./assets/common/images/main/icon6.png" alt="실버케어이미지" />
+                </div>
+              </li>
+              <li>
+                <div class="tit-set inner">
+                  <div class="tit">실시간 환자 모니터링</div>
+                </div>
+                <div class="img-set">
+                  <img src="./assets/common/images/main/icon1.png" alt="실버케어이미지" />
+                </div>
+              </li>
+              <li>
+                <div class="tit-set inner">
+                  <div class="tit">데이터 기반 환자 분석</div>
+                </div>
+                <div class="img-set">
+                  <img src="./assets/common/images/main/icon2.png" alt="실버케어이미지" />
+                </div>
+              </li>
+              <li>
+                <div class="tit-set inner">
+                  <div class="tit">AI 기반 예측 맞춤 돌봄</div>
+                </div>
+                <div class="img-set">
+                  <img src="./assets/common/images/main/icon3.png" alt="실버케어이미지" />
+                </div>
+              </li>
+              <li>
+                <div class="tit-set inner">
+                  <div class="tit">보호자 안심 서비스</div>
+                </div>
+                <div class="img-set">
+                  <img src="./assets/common/images/main/icon4.png" alt="실버케어이미지" />
+                </div>
+              </li>
+              <li>
+                <div class="tit-set inner">
+                  <div class="tit">체계적인 응급상황 관리</div>
+                </div>
+                <div class="img-set">
+                  <img src="./assets/common/images/main/icon5.png" alt="실버케어이미지" />
+                </div>
+              </li>
+              <li>
+                <div class="tit-set inner">
+                  <div class="tit">효율적인 간병인 관리 서비스</div>
+                </div>
+                <div class="img-set">
+                  <img src="./assets/common/images/main/icon6.png" alt="실버케어이미지" />
+                </div>
+              </li>
+              <li>
+                <div class="tit-set inner">
+                  <div class="tit">실시간 환자 모니터링</div>
+                </div>
+                <div class="img-set">
+                  <img src="./assets/common/images/main/icon1.png" alt="실버케어이미지" />
+                </div>
+              </li>
+              <li>
+                <div class="tit-set inner">
+                  <div class="tit">데이터 기반 환자 분석</div>
+                </div>
+                <div class="img-set">
+                  <img src="./assets/common/images/main/icon2.png" alt="실버케어이미지" />
+                </div>
+              </li>
+              <li>
+                <div class="tit-set inner">
+                  <div class="tit">AI 기반 예측 맞춤 돌봄</div>
+                </div>
+                <div class="img-set">
+                  <img src="./assets/common/images/main/icon3.png" alt="실버케어이미지" />
+                </div>
+              </li>
+              <li>
+                <div class="tit-set inner">
+                  <div class="tit">보호자 안심 서비스</div>
+                </div>
+                <div class="img-set">
+                  <img src="./assets/common/images/main/icon4.png" alt="실버케어이미지" />
+                </div>
+              </li>
+              <li>
+                <div class="tit-set inner">
+                  <div class="tit">체계적인 응급상황 관리</div>
+                </div>
+                <div class="img-set">
+                  <img src="./assets/common/images/main/icon5.png" alt="실버케어이미지" />
+                </div>
+              </li>
+              <li>
+                <div class="tit-set inner">
+                  <div class="tit">효율적인 간병인 관리 서비스</div>
+                </div>
+                <div class="img-set">
+                  <img src="./assets/common/images/main/icon6.png" alt="실버케어이미지" />
+                </div>
+              </li>
+              <li>
+                <div class="tit-set inner">
+                  <div class="tit">실시간 환자 모니터링</div>
+                </div>
+                <div class="img-set">
+                  <img src="./assets/common/images/main/icon1.png" alt="실버케어이미지" />
+                </div>
+              </li>
+              <li>
+                <div class="tit-set inner">
+                  <div class="tit">데이터 기반 환자 분석</div>
+                </div>
+                <div class="img-set">
+                  <img src="./assets/common/images/main/icon2.png" alt="실버케어이미지" />
+                </div>
+              </li>
+              <li>
+                <div class="tit-set inner">
+                  <div class="tit">AI 기반 예측 맞춤 돌봄</div>
+                </div>
+                <div class="img-set">
+                  <img src="./assets/common/images/main/icon3.png" alt="실버케어이미지" />
+                </div>
+              </li>
+              <li>
+                <div class="tit-set inner">
+                  <div class="tit">보호자 안심 서비스</div>
+                </div>
+                <div class="img-set">
+                  <img src="./assets/common/images/main/icon4.png" alt="실버케어이미지" />
+                </div>
+              </li>
+              <li>
+                <div class="tit-set inner">
+                  <div class="tit">체계적인 응급상황 관리</div>
+                </div>
+                <div class="img-set">
+                  <img src="./assets/common/images/main/icon5.png" alt="실버케어이미지" />
+                </div>
+              </li>
+              <li>
+                <div class="tit-set inner">
+                  <div class="tit">효율적인 간병인 관리 서비스</div>
+                </div>
+                <div class="img-set">
+                  <img src="./assets/common/images/main/icon6.png" alt="실버케어이미지" />
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- main-section : 프로세스 dt -->
+          <div class="main-section process dt-only">
+            <div class="wrap">
+              <div class="tit-set">
+                <div class="tit black">
+                  늘 적정성 평가는<br />
+                  숫자가 아닌 <span>프로세스</span>를 통해<br />
+                  요양병원 평가 관리가<br />
+                  가능합니다.
+                </div>
+                <button class="btn-readmore"><a href="./html/ko/service/assessment.html">자세히 보기</a></button>
+              </div>
+              <div class="content">
+                <div class="content-wrap">
+                  <!-- 3개씩 x 4 -->
+                  <ul class="marquee">
+                    <li>
+                      <div class="tit-set inner">
+                        <div class="tit white">매년 적정성<br />평가 항목<br />자동반영</div>
+                      </div>
+                      <div class="img-set">
+                        <img src="./assets/common/images/main/process1_L.png" alt="" />
+                      </div>
+                    </li>
+                    <li>
+                      <div class="tit-set inner">
+                        <div class="tit white">심사 및 EMR시스템<br />연동 된 자동화<br />데이터 수집</div>
+                      </div>
+                      <div class="img-set">
+                        <img src="./assets/common/images/main/process2_L.png" alt="" />
+                      </div>
+                    </li>
+                    <li>
+                      <div class="tit-set inner">
+                        <div class="tit white">월별 실적 진단<br />및 결과분석</div>
+                      </div>
+                      <div class="img-set">
+                        <img src="./assets/common/images/main/process3_L.png" alt="" />
+                      </div>
+                    </li>
+                    <li>
+                      <div class="tit-set inner">
+                        <div class="tit white">매년 적정성<br />평가 항목<br />자동반영</div>
+                      </div>
+                      <div class="img-set">
+                        <img src="./assets/common/images/main/process1_L.png" alt="" />
+                      </div>
+                    </li>
+                    <li>
+                      <div class="tit-set inner">
+                        <div class="tit white">심사 및 EMR시스템<br />연동 된 자동화<br />데이터 수집</div>
+                      </div>
+                      <div class="img-set">
+                        <img src="./assets/common/images/main/process2_L.png" alt="" />
+                      </div>
+                    </li>
+                    <li>
+                      <div class="tit-set inner">
+                        <div class="tit white">월별 실적 진단<br />및 결과분석</div>
+                      </div>
+                      <div class="img-set">
+                        <img src="./assets/common/images/main/process3_L.png" alt="" />
+                      </div>
+                    </li>
+                    <li>
+                      <div class="tit-set inner">
+                        <div class="tit white">매년 적정성<br />평가 항목<br />자동반영</div>
+                      </div>
+                      <div class="img-set">
+                        <img src="./assets/common/images/main/process1_L.png" alt="" />
+                      </div>
+                    </li>
+                    <li>
+                      <div class="tit-set inner">
+                        <div class="tit white">심사 및 EMR시스템<br />연동 된 자동화<br />데이터 수집</div>
+                      </div>
+                      <div class="img-set">
+                        <img src="./assets/common/images/main/process2_L.png" alt="" />
+                      </div>
+                    </li>
+                    <li>
+                      <div class="tit-set inner">
+                        <div class="tit white">월별 실적 진단<br />및 결과분석</div>
+                      </div>
+                      <div class="img-set">
+                        <img src="./assets/common/images/main/process3_L.png" alt="" />
+                      </div>
+                    </li>
+                    <li>
+                      <div class="tit-set inner">
+                        <div class="tit white">매년 적정성<br />평가 항목<br />자동반영</div>
+                      </div>
+                      <div class="img-set">
+                        <img src="./assets/common/images/main/process1_L.png" alt="" />
+                      </div>
+                    </li>
+                    <li>
+                      <div class="tit-set inner">
+                        <div class="tit white">심사 및 EMR시스템<br />연동 된 자동화<br />데이터 수집</div>
+                      </div>
+                      <div class="img-set">
+                        <img src="./assets/common/images/main/process2_L.png" alt="" />
+                      </div>
+                    </li>
+                    <li>
+                      <div class="tit-set inner">
+                        <div class="tit white">월별 실적 진단<br />및 결과분석</div>
+                      </div>
+                      <div class="img-set">
+                        <img src="./assets/common/images/main/process3_L.png" alt="" />
+                      </div>
+                    </li>
+                  </ul>
+                  <ul class="marquee">
+                    <li>
+                      <div class="tit-set inner">
+                        <div class="tit white">심평원 평가지표<br />및 데이터 요건<br />자동 반영</div>
+                      </div>
+                      <div class="img-set">
+                        <img src="./assets/common/images/main/process1_R.png" alt="" />
+                      </div>
+                    </li>
+                    <li>
+                      <div class="tit-set inner">
+                        <div class="tit white">매월 결과 분석 및<br />등급 시뮬레이션</div>
+                      </div>
+                      <div class="img-set">
+                        <img src="./assets/common/images/main/process2_R.png" alt="" />
+                      </div>
+                    </li>
+                    <li>
+                      <div class="tit-set inner">
+                        <div class="tit white">시뮬레이션을<br />통한 목표 관리</div>
+                      </div>
+                      <div class="img-set">
+                        <img src="./assets/common/images/main/process3_R.png" alt="" />
+                      </div>
+                    </li>
+                    <li>
+                      <div class="tit-set inner">
+                        <div class="tit white">심평원 평가지표<br />및 데이터 요건<br />자동 반영</div>
+                      </div>
+                      <div class="img-set">
+                        <img src="./assets/common/images/main/process1_R.png" alt="" />
+                      </div>
+                    </li>
+                    <li>
+                      <div class="tit-set inner">
+                        <div class="tit white">매월 결과 분석 및<br />등급 시뮬레이션</div>
+                      </div>
+                      <div class="img-set">
+                        <img src="./assets/common/images/main/process2_R.png" alt="" />
+                      </div>
+                    </li>
+                    <li>
+                      <div class="tit-set inner">
+                        <div class="tit white">시뮬레이션을<br />통한 목표 관리</div>
+                      </div>
+                      <div class="img-set">
+                        <img src="./assets/common/images/main/process3_R.png" alt="" />
+                      </div>
+                    </li>
+                    <li>
+                      <div class="tit-set inner">
+                        <div class="tit white">심평원 평가지표<br />및 데이터 요건<br />자동 반영</div>
+                      </div>
+                      <div class="img-set">
+                        <img src="./assets/common/images/main/process1_R.png" alt="" />
+                      </div>
+                    </li>
+                    <li>
+                      <div class="tit-set inner">
+                        <div class="tit white">매월 결과 분석 및<br />등급 시뮬레이션</div>
+                      </div>
+                      <div class="img-set">
+                        <img src="./assets/common/images/main/process2_R.png" alt="" />
+                      </div>
+                    </li>
+                    <li>
+                      <div class="tit-set inner">
+                        <div class="tit white">시뮬레이션을<br />통한 목표 관리</div>
+                      </div>
+                      <div class="img-set">
+                        <img src="./assets/common/images/main/process3_R.png" alt="" />
+                      </div>
+                    </li>
+                    <li>
+                      <div class="tit-set inner">
+                        <div class="tit white">심평원 평가지표<br />및 데이터 요건<br />자동 반영</div>
+                      </div>
+                      <div class="img-set">
+                        <img src="./assets/common/images/main/process1_R.png" alt="" />
+                      </div>
+                    </li>
+                    <li>
+                      <div class="tit-set inner">
+                        <div class="tit white">매월 결과 분석 및<br />등급 시뮬레이션</div>
+                      </div>
+                      <div class="img-set">
+                        <img src="./assets/common/images/main/process2_R.png" alt="" />
+                      </div>
+                    </li>
+                    <li>
+                      <div class="tit-set inner">
+                        <div class="tit white">시뮬레이션을<br />통한 목표 관리</div>
+                      </div>
+                      <div class="img-set">
+                        <img src="./assets/common/images/main/process3_R.png" alt="" />
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- main-section : 프로세스 mobile -->
+          <div class="main-section process mobile-only">
+            <div class="wrap">
+              <div class="tit-set">
+                <div class="tit black">
+                  늘 적정성 평가는<br />
+                  숫자가 아닌 <span>프로세스</span>를 통해<br />
+                  요양병원 평가 관리가<br />
+                  가능합니다.
+                </div>
+                <button class="btn-readmore"><a href="./html/ko/service/assessment.html">자세히 보기</a></button>
+              </div>
+              <div class="content">
+                <div class="content-wrap">
+                  <!-- 3개씩 x 4 -->
+                  <ul class="marquee">
+                    <li>
+                      <div class="tit-set inner">
+                        <div class="tit white">매년 적정성 <br />평가 항목 <br />자동반영</div>
+                      </div>
+                      <div class="img-set">
+                        <img src="./assets/common/images/main/process1_L.png" alt="적정성평가이미지" />
+                      </div>
+                    </li>
+                    <li>
+                      <div class="tit-set inner">
+                        <div class="tit white">심사 및 EMR시스템 <br />연동 된 자동화 <br />데이터 수집</div>
+                      </div>
+                      <div class="img-set">
+                        <img src="./assets/common/images/main/process2_L.png" alt="적정성평가이미지" />
+                      </div>
+                    </li>
+                    <li>
+                      <div class="tit-set inner">
+                        <div class="tit white">월별 실적 진단 <br />및 결과분석</div>
+                      </div>
+                      <div class="img-set">
+                        <img src="./assets/common/images/main/process3_L.png" alt="적정성평가이미지" />
+                      </div>
+                    </li>
+                    <li>
+                      <div class="tit-set inner">
+                        <div class="tit white">매년 적정성 <br />평가 항목 <br />자동반영</div>
+                      </div>
+                      <div class="img-set">
+                        <img src="./assets/common/images/main/process1_L.png" alt="적정성평가이미지" />
+                      </div>
+                    </li>
+                    <li>
+                      <div class="tit-set inner">
+                        <div class="tit white">심사 및 EMR시스템 <br />연동 된 자동화 <br />데이터 수집</div>
+                      </div>
+                      <div class="img-set">
+                        <img src="./assets/common/images/main/process2_L.png" alt="적정성평가이미지" />
+                      </div>
+                    </li>
+                    <li>
+                      <div class="tit-set inner">
+                        <div class="tit white">월별 실적 진단 <br />및 결과분석</div>
+                      </div>
+                      <div class="img-set">
+                        <img src="./assets/common/images/main/process3_L.png" alt="적정성평가이미지" />
+                      </div>
+                    </li>
+                    <li>
+                      <div class="tit-set inner">
+                        <div class="tit white">매년 적정성 <br />평가 항목 <br />자동반영</div>
+                      </div>
+                      <div class="img-set">
+                        <img src="./assets/common/images/main/process1_L.png" alt="적정성평가이미지" />
+                      </div>
+                    </li>
+                    <li>
+                      <div class="tit-set inner">
+                        <div class="tit white">심사 및 EMR시스템 <br />연동 된 자동화 <br />데이터 수집</div>
+                      </div>
+                      <div class="img-set">
+                        <img src="./assets/common/images/main/process2_L.png" alt="적정성평가이미지" />
+                      </div>
+                    </li>
+                    <li>
+                      <div class="tit-set inner">
+                        <div class="tit white">월별 실적 진단 <br />및 결과분석</div>
+                      </div>
+                      <div class="img-set">
+                        <img src="./assets/common/images/main/process3_L.png" alt="적정성평가이미지" />
+                      </div>
+                    </li>
+                    <li>
+                      <div class="tit-set inner">
+                        <div class="tit white">매년 적정성 <br />평가 항목 <br />자동반영</div>
+                      </div>
+                      <div class="img-set">
+                        <img src="./assets/common/images/main/process1_L.png" alt="적정성평가이미지" />
+                      </div>
+                    </li>
+                    <li>
+                      <div class="tit-set inner">
+                        <div class="tit white">심사 및 EMR시스템 <br />연동 된 자동화 <br />데이터 수집</div>
+                      </div>
+                      <div class="img-set">
+                        <img src="./assets/common/images/main/process2_L.png" alt="적정성평가이미지" />
+                      </div>
+                    </li>
+                    <li>
+                      <div class="tit-set inner">
+                        <div class="tit white">월별 실적 진단 <br />및 결과분석</div>
+                      </div>
+                      <div class="img-set">
+                        <img src="./assets/common/images/main/process3_L.png" alt="적정성평가이미지" />
+                      </div>
+                    </li>
+                  </ul>
+                  <ul class="marquee">
+                    <li>
+                      <div class="tit-set inner">
+                        <div class="tit white">심평원 평가지표 <br />및 데이터 요건 <br />자동 반영</div>
+                      </div>
+                      <div class="img-set">
+                        <img src="./assets/common/images/main/process1_R.png" alt="적정성평가이미지" />
+                      </div>
+                    </li>
+                    <li>
+                      <div class="tit-set inner">
+                        <div class="tit white">매월 결과 분석 및 <br />등급 시뮬레이션</div>
+                      </div>
+                      <div class="img-set">
+                        <img src="./assets/common/images/main/process2_R.png" alt="적정성평가이미지" />
+                      </div>
+                    </li>
+                    <li>
+                      <div class="tit-set inner">
+                        <div class="tit white">시뮬레이션을 <br />통한 목표 관리</div>
+                      </div>
+                      <div class="img-set">
+                        <img src="./assets/common/images/main/process3_R.png" alt="적정성평가이미지" />
+                      </div>
+                    </li>
+                    <li>
+                      <div class="tit-set inner">
+                        <div class="tit white">심평원 평가지표 <br />및 데이터 요건 <br />자동 반영</div>
+                      </div>
+                      <div class="img-set">
+                        <img src="./assets/common/images/main/process1_R.png" alt="적정성평가이미지" />
+                      </div>
+                    </li>
+                    <li>
+                      <div class="tit-set inner">
+                        <div class="tit white">매월 결과 분석 및 <br />등급 시뮬레이션</div>
+                      </div>
+                      <div class="img-set">
+                        <img src="./assets/common/images/main/process2_R.png" alt="적정성평가이미지" />
+                      </div>
+                    </li>
+                    <li>
+                      <div class="tit-set inner">
+                        <div class="tit white">시뮬레이션을 <br />통한 목표 관리</div>
+                      </div>
+                      <div class="img-set">
+                        <img src="./assets/common/images/main/process3_R.png" alt="적정성평가이미지" />
+                      </div>
+                    </li>
+                    <li>
+                      <div class="tit-set inner">
+                        <div class="tit white">심평원 평가지표 <br />및 데이터 요건<br />자동 반영</div>
+                      </div>
+                      <div class="img-set">
+                        <img src="./assets/common/images/main/process1_R.png" alt="적정성평가이미지" />
+                      </div>
+                    </li>
+                    <li>
+                      <div class="tit-set inner">
+                        <div class="tit white">매월 결과 분석 및 <br />등급 시뮬레이션</div>
+                      </div>
+                      <div class="img-set">
+                        <img src="./assets/common/images/main/process2_R.png" alt="적정성평가이미지" />
+                      </div>
+                    </li>
+                    <li>
+                      <div class="tit-set inner">
+                        <div class="tit white">시뮬레이션을 <br />통한 목표 관리</div>
+                      </div>
+                      <div class="img-set">
+                        <img src="./assets/common/images/main/process3_R.png" alt="적정성평가이미지" />
+                      </div>
+                    </li>
+                    <li>
+                      <div class="tit-set inner">
+                        <div class="tit white">심평원 평가지표 <br />및 데이터 요건<br />자동 반영</div>
+                      </div>
+                      <div class="img-set">
+                        <img src="./assets/common/images/main/process1_R.png" alt="적정성평가이미지" />
+                      </div>
+                    </li>
+                    <li>
+                      <div class="tit-set inner">
+                        <div class="tit white">매월 결과 분석 및 <br />등급 시뮬레이션</div>
+                      </div>
+                      <div class="img-set">
+                        <img src="./assets/common/images/main/process2_R.png" alt="적정성평가이미지" />
+                      </div>
+                    </li>
+                    <li>
+                      <div class="tit-set inner">
+                        <div class="tit white">시뮬레이션을 <br />통한 목표 관리</div>
+                      </div>
+                      <div class="img-set">
+                        <img src="./assets/common/images/main/process3_R.png" alt="적정성평가이미지" />
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- main-section : 스마트밴드 -->
+          <div class="main-section smartband">
+            <div class="row-content">
+              <div class="tit-set">
+                <div class="tit black">
+                  늘 스마트 밴드는<br />
+                  환자가 더 <span>안전</span>하고<br />
+                  믿을 수 있도록<br />
+                  <span>친환경 소재</span>로 디자인 제작<br />
+                  되었습니다.
+                </div>
+                <button class="btn-readmore"><a href="./html/ko/product/band.html">자세히 보기</a></button>
+              </div>
+            </div>
+            <div class="img-set">
+              <img src="./assets/common/images/main/smartband.png" alt="스마트밴드배경이미지" />
+              <img src="./assets/common/images/main/smartband_m.png" alt="스마트밴드배경이미지" />
+            </div>
+          </div>
+
+          <!-- main-section : 새로운소식 -->
+          <div class="main-section new">
+            <div class="row-content">
+              <div class="tit-set">
+                <div class="tit black">Neul 서비스의<br /><span>새로운소식</span>을 만나보세요.</div>
+              </div>
+              <div class="content">
+                <ul>
+                  <li>
+                    <a href="./html/ko/news/press_release_detail.html">
+                      <div class="img-set">
+                        <img src="./assets/common/images/main/new1.png" alt="새로운소식이미지" />
+                      </div>
+                      <div class="tit-set inner">
+                        <div class="tit">비투엔,KIMES 2023서 AI기반 디지털 케어 플랫폼'NEUL(늘)'</div>
+                        <div class="day">2023.12.08</div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./html/ko/news/press_release_detail.html">
+                      <div class="img-set">
+                        <img src="../../assets/common/images/main/new2.png" alt="새로운소식이미지" />
+                      </div>
+                      <div class="tit-set inner">
+                        <div class="tit">[인터뷰]'NEUL(늘)' 실버케어 서비스, '광주·전남 확산'의 첨병될 것</div>
+                        <div class="day">2023.12.08</div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./html/ko/news/press_release_detail.html">
+                      <div class="img-set">
+                        <img src="./assets/common/images/main/new3.png" alt="새로운소식이미지" />
+                      </div>
+                      <div class="tit-set inner">
+                        <div class="tit">비투엔, AI 디지털실버케어 '늘 실버케어' 상반기 론칭</div>
+                        <div class="day">2023.12.08</div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./html/ko/news/press_release_detail.html">
+                      <div class="img-set">
+                        <img src="./assets/common/images/main/new4.png" alt="새로운소식이미지" />
+                      </div>
+                      <div class="tit-set inner">
+                        <div class="tit">[인터뷰] 비투엔, 마지막 여생의 길을 더욱 아름답게</div>
+                        <div class="day">2023.12.08</div>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+                <button class="btn-readmore white"><a href="./html/ko/news/press_release.html">'늘' 더 많은 소식 보기</a></button>
+              </div>
+            </div>
+          </div>
+
+          <!-- main-section : 고객사례 -->
+          <div class="main-section contact">
+            <div class="row-content">
+              <div class="tit-set">
+                <div class="tit black">최근 도입한 <span>고객사</span>의 따끈한<span>후기</span></div>
+              </div>
+            </div>
+            <div class="contact-con">
+              <!-- marquee-wrap 안에 marquee끼리 같은내용 4개씩 2묶음 - 한줄 8개 -->
+              <div class="marquee-wrap">
+                <ul class="marquee">
+                  <li>
+                    <div class="top-set">
+                      <div class="tit-set inner">
+                        <div class="tit">환자별 위험 지표를 통해 고위험 환자의 체계적인 관리가 가능해요</div>
+                        <div class="txt">환자별 위험 지표를 통해 고위험 환자의 체계적인 관리가 가능해요.</div>
+                      </div>
+                    </div>
+                    <div class="bottom-set">
+                      <div class="img-set">
+                        <img src="./assets/common/images/main/contact1.png" alt="" />
+                      </div>
+                      <div class="tit-set">
+                        <div class="name">Dr.김하늘</div>
+                        <div class="hospital">호남더선요양병원</div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="top-set">
+                      <div class="tit-set inner">
+                        <div class="tit">친절해요</div>
+                        <div class="txt">환자별 위험 지표를 통해 고위험 환자의 체계적인 관리가 가능해요. 응급상황 발생시 알림을 통해 응급 환자에게 빠르게 도움을 줄 수 있어요.</div>
+                      </div>
+                    </div>
+                    <div class="bottom-set">
+                      <div class="img-set">
+                        <img src="./assets/common/images/main/contact2.png" alt="" />
+                      </div>
+                      <div class="tit-set">
+                        <div class="name">Dr.김하늘</div>
+                        <div class="hospital">호남더선요양병원</div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="top-set">
+                      <div class="tit-set inner">
+                        <div class="tit">환자별 위험 지표를 통해 고위험 환자의 체계적인 관리가 가능해요</div>
+                        <div class="txt">환자별 위험 지표를 통해 고위험 환자의 체계적인 관리가 가능해요. 응급상황 발생시 알림을 통해 응급 환자에게 빠르게 도움을 줄 수 있어요.</div>
+                      </div>
+                    </div>
+                    <div class="bottom-set">
+                      <div class="img-set">
+                        <img src="./assets/common/images/main/contact3.png" alt="" />
+                      </div>
+                      <div class="tit-set">
+                        <div class="name">Dr.김하늘</div>
+                        <div class="hospital">호남더선요양병원</div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="top-set">
+                      <div class="tit-set inner">
+                        <div class="tit">환자별 위험 지표를 통해 고위험 환자의 체계적인 관리가 가능해요</div>
+                        <div class="txt">환자별 위험 지표를 통해 고위험 환자의 체계적인 관리가 가능해요. 응급상황 발생시 알림을 통해 응급 환자에게 빠르게 도움을 줄 수 있어요.</div>
+                      </div>
+                    </div>
+                    <div class="bottom-set">
+                      <div class="img-set">
+                        <img src="./assets/common/images/main/contact4.png" alt="" />
+                      </div>
+                      <div class="tit-set">
+                        <div class="name">Dr.김하늘</div>
+                        <div class="hospital">호남더선요양병원</div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <ul class="marquee">
+                  <li>
+                    <div class="top-set">
+                      <div class="tit-set inner">
+                        <div class="tit">환자별 위험 지표를 통해 고위험 환자의 체계적인 관리가 가능해요</div>
+                        <div class="txt">환자별 위험 지표를 통해 고위험 환자의 체계적인 관리가 가능해요.</div>
+                      </div>
+                    </div>
+                    <div class="bottom-set">
+                      <div class="img-set">
+                        <img src="./assets/common/images/main/contact1.png" alt="이미지" />
+                      </div>
+                      <div class="tit-set">
+                        <div class="name">Dr.김하늘</div>
+                        <div class="hospital">호남더선요양병원</div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="top-set">
+                      <div class="tit-set inner">
+                        <div class="tit">친절해요</div>
+                        <div class="txt">환자별 위험 지표를 통해 고위험 환자의 체계적인 관리가 가능해요. 응급상황 발생시 알림을 통해 응급 환자에게 빠르게 도움을 줄 수 있어요.</div>
+                      </div>
+                    </div>
+                    <div class="bottom-set">
+                      <div class="img-set">
+                        <img src="./assets/common/images/main/contact2.png" alt="이미지" />
+                      </div>
+                      <div class="tit-set">
+                        <div class="name">Dr.김하늘</div>
+                        <div class="hospital">호남더선요양병원</div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="top-set">
+                      <div class="tit-set inner">
+                        <div class="tit">환자별 위험 지표를 통해 고위험 환자의 체계적인 관리가 가능해요</div>
+                        <div class="txt">환자별 위험 지표를 통해 고위험 환자의 체계적인 관리가 가능해요. 응급상황 발생시 알림을 통해 응급 환자에게 빠르게 도움을 줄 수 있어요.</div>
+                      </div>
+                    </div>
+                    <div class="bottom-set">
+                      <div class="img-set">
+                        <img src="./assets/common/images/main/contact3.png" alt="이미지" />
+                      </div>
+                      <div class="tit-set">
+                        <div class="name">Dr.김하늘</div>
+                        <div class="hospital">호남더선요양병원</div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="top-set">
+                      <div class="tit-set inner">
+                        <div class="tit">환자별 위험 지표를 통해 고위험 환자의 체계적인 관리가 가능해요</div>
+                        <div class="txt">환자별 위험 지표를 통해 고위험 환자의 체계적인 관리가 가능해요. 응급상황 발생시 알림을 통해 응급 환자에게 빠르게 도움을 줄 수 있어요.</div>
+                      </div>
+                    </div>
+                    <div class="bottom-set">
+                      <div class="img-set">
+                        <img src="./assets/common/images/main/contact4.png" alt="이미지" />
+                      </div>
+                      <div class="tit-set">
+                        <div class="name">Dr.김하늘</div>
+                        <div class="hospital">호남더선요양병원</div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="marquee-wrap">
+                <ul class="marquee">
+                  <li>
+                    <div class="top-set">
+                      <div class="tit-set inner">
+                        <div class="tit">환자별 위험 지표를 통해 고위험 환자의 체계적인 관리가 가능해요</div>
+                        <div class="txt">환자별 위험 지표를 통해 고위험 환자의 체계적인 관리가 가능해요. 응급상황 발생시 알림을 통해 응급 환자에게 빠르게 도움을 줄 수 있어요.</div>
+                      </div>
+                    </div>
+                    <div class="bottom-set">
+                      <div class="img-set">
+                        <img src="./assets/common/images/main/contact4.png" alt="이미지" />
+                      </div>
+                      <div class="tit-set">
+                        <div class="name">Dr.김하늘</div>
+                        <div class="hospital">호남더선요양병원</div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="top-set">
+                      <div class="tit-set inner">
+                        <div class="tit">환자별 위험 지표를 통해 고위험 환자의 체계적인 관리가 가능해요</div>
+                        <div class="txt">환자별 위험 지표를 통해 고위험 환자의 체계적인 관리가 가능해요. 응급상황 발생시 알림을 통해 응급 환자에게 빠르게 도움을 줄 수 있어요.</div>
+                      </div>
+                    </div>
+                    <div class="bottom-set">
+                      <div class="img-set">
+                        <img src="./assets/common/images/main/contact4.png" alt="이미지" />
+                      </div>
+                      <div class="tit-set">
+                        <div class="name">Dr.김하늘</div>
+                        <div class="hospital">호남더선요양병원</div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="top-set">
+                      <div class="tit-set inner">
+                        <div class="tit">환자별 위험 지표를 통해 고위험 환자의 체계적인 관리가 가능해요</div>
+                        <div class="txt">환자별 위험 지표를 통해 고위험 환자의 체계적인 관리가 가능해요. 응급상황 발생시 알림을 통해 응급 환자에게 빠르게 도움을 줄 수 있어요.</div>
+                      </div>
+                    </div>
+                    <div class="bottom-set">
+                      <div class="img-set">
+                        <img src="./assets/common/images/main/contact4.png" alt="이미지" />
+                      </div>
+                      <div class="tit-set">
+                        <div class="name">Dr.김하늘</div>
+                        <div class="hospital">호남더선요양병원</div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="top-set">
+                      <div class="tit-set inner">
+                        <div class="tit">환자별 위험 지표를 통해 고위험 환자의 체계적인 관리가 가능해요</div>
+                        <div class="txt">환자별 위험 지표를 통해 고위험 환자의 체계적인 관리가 가능해요. 응급상황 발생시 알림을 통해 응급 환자에게 빠르게 도움을 줄 수 있어요.</div>
+                      </div>
+                    </div>
+                    <div class="bottom-set">
+                      <div class="img-set">
+                        <img src="./assets/common/images/main/contact4.png" alt="이미지" />
+                      </div>
+                      <div class="tit-set">
+                        <div class="name">Dr.김하늘</div>
+                        <div class="hospital">호남더선요양병원</div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <ul class="marquee">
+                  <li>
+                    <div class="top-set">
+                      <div class="tit-set inner">
+                        <div class="tit">환자별 위험 지표를 통해 고위험 환자의 체계적인 관리가 가능해요</div>
+                        <div class="txt">환자별 위험 지표를 통해 고위험 환자의 체계적인 관리가 가능해요. 응급상황 발생시 알림을 통해 응급 환자에게 빠르게 도움을 줄 수 있어요.</div>
+                      </div>
+                    </div>
+                    <div class="bottom-set">
+                      <div class="img-set">
+                        <img src="./assets/common/images/main/contact4.png" alt="이미지" />
+                      </div>
+                      <div class="tit-set">
+                        <div class="name">Dr.김하늘</div>
+                        <div class="hospital">호남더선요양병원</div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="top-set">
+                      <div class="tit-set inner">
+                        <div class="tit">환자별 위험 지표를 통해 고위험 환자의 체계적인 관리가 가능해요</div>
+                        <div class="txt">환자별 위험 지표를 통해 고위험 환자의 체계적인 관리가 가능해요. 응급상황 발생시 알림을 통해 응급 환자에게 빠르게 도움을 줄 수 있어요.</div>
+                      </div>
+                    </div>
+                    <div class="bottom-set">
+                      <div class="img-set">
+                        <img src="./assets/common/images/main/contact4.png" alt="이미지" />
+                      </div>
+                      <div class="tit-set">
+                        <div class="name">Dr.김하늘</div>
+                        <div class="hospital">호남더선요양병원</div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="top-set">
+                      <div class="tit-set inner">
+                        <div class="tit">환자별 위험 지표를 통해 고위험 환자의 체계적인 관리가 가능해요</div>
+                        <div class="txt">환자별 위험 지표를 통해 고위험 환자의 체계적인 관리가 가능해요. 응급상황 발생시 알림을 통해 응급 환자에게 빠르게 도움을 줄 수 있어요.</div>
+                      </div>
+                    </div>
+                    <div class="bottom-set">
+                      <div class="img-set">
+                        <img src="./assets/common/images/main/contact4.png" alt="이미지" />
+                      </div>
+                      <div class="tit-set">
+                        <div class="name">Dr.김하늘</div>
+                        <div class="hospital">호남더선요양병원</div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="top-set">
+                      <div class="tit-set inner">
+                        <div class="tit">환자별 위험 지표를 통해 고위험 환자의 체계적인 관리가 가능해요</div>
+                        <div class="txt">환자별 위험 지표를 통해 고위험 환자의 체계적인 관리가 가능해요. 응급상황 발생시 알림을 통해 응급 환자에게 빠르게 도움을 줄 수 있어요.</div>
+                      </div>
+                    </div>
+                    <div class="bottom-set">
+                      <div class="img-set">
+                        <img src="./assets/common/images/main/contact4.png" alt="이미지" />
+                      </div>
+                      <div class="tit-set">
+                        <div class="name">Dr.김하늘</div>
+                        <div class="hospital">호남더선요양병원</div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- main-section : 문의하기 -->
+          <div class="main-section inquiry">
+            <img src="./assets/common/images/main/inquiry.png" alt="배경이미지" />
+            <img src="./assets/common/images/main/inquiry_m.png" alt="배경이미지" />
+            <div class="row-content">
+              <h3>
+                NEUL 서비스의 기술과<br />
+                서비스에 대해 문의 하세요.
+              </h3>
+              <!-- 2023-12-27 v.08_20231227 변경사항 적용 -->
+              <button type="button" class="btn-readmore" onclick="common.channelTalk();">
+                <a href="">문의하기</a>
+              </button>
+            </div>
+          </div>
+
+          <!-- 채팅문의 -->
+          <!-- 2023-12-27 v.08_20231227 변경사항 적용 -->
+          <button class="chatting dt-only" onclick="common.channelTalk();">
+            <img src="./assets/common/images/main/chatting_b.svg" alt="채팅문의이미지" />
+            <img src="./assets/common/images/main/chatting_w.svg" alt="채팅문의이미지" />
+          </button>
+        </div>
+      </div>
+      <!-- footer -->
+      <!-- 2024-01-04 모든 푸터 오타 일괄수정 -->
+      <div id="footer">
+        <div class="footer-wrap">
+          <div class="footer-logo"></div>
+          <div class="footer-info">
+            <p>상호명 <span>(주)비투엔</span> 대표이사 : <span>안태일</span></p>
+            <p class="address">
+              (07255) 서울특별시 영등포구 선유로 146<br class="mobile-br" />
+              이앤씨드림타워 2층
+            </p>
+            <ul class="contact-list">
+              <li class="email">
+                <a href="mailto:neulcare@b2en.com">neulcare@b2en.com</a>
+              </li>
+              <li class="tel">02. 2636. 0805</li>
+              <li>사업자 등록번호 : 302-87-00950</li>
+            </ul>
+          </div>
+          <p class="copyright">ⓒB2EN CO.LTD.ALL RIGHTS RESERVED.</p>
+        </div>
+      </div>
+    </div>
+    <!-- //#wrap -->
+
+    <!-- [D]: 알림팝업 -->
+    <!-- 2023-11-16 추가 -->
+    <div class="popup pop-alert">
+      <div class="popup-header rgt">
+        <button type="button" class="popup-close" onclick="common.closeModalPopup();"></button>
+      </div>
+      <div class="popup-content">
+        <div class="tit-set">
+          <div class="txt">알림창입니다.</div>
+        </div>
+      </div>
+      <div class="popup-footer">
+        <div class="btn-set">
+          <button type="button" class="primary" onclick="common.closeModalPopup();">확인</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

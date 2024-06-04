@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "node-sass": "node-sass",
+    "sass-common": "node-sass -rw --source-map true --source-map-contents true --output-style expanded ./assets/common/scss/style.scss ./assets/common/css/style.css",
+    "sass-ko": "node-sass -rw --source-map true --source-map-contents true --output-style expanded ./assets/ko/scss/style.scss ./assets/ko/css/style.css",
+    "sass-en": "node-sass -rw --source-map true --source-map-contents true --output-style expanded ./assets/en/scss/style.scss ./assets/en/css/style.css"
+  },
+  "dependencies": {
+    "bezier-easing": "^2.1.0",
+    "node-sass": "^9.0.0"
+  }
+}
