@@ -660,6 +660,7 @@ let ani = {
     $(window).trigger('scroll')
   }
   },
+  // 스크롤값 세션스토리지에서 기억
   rememberScrollTop : function () {
 
     // 1024이상의 해상도일때 현재 스크롤값을 기억해 세션스토리지에 넣는다.
@@ -675,9 +676,9 @@ let ani = {
       }
     })
   },
+  // 채팅문의 아이콘 스크롤 위치에 따른 색상변화
   chattingIcon : function() {
     if($('.chatting').length > 0){
-      // 채팅문의 아이콘 스크롤 위치에 따른 색상변화
       let wH = 0
       let chattingH = $('.chatting').height()
       let chat_trg1 = $('.main-section.introduction').offset().top
@@ -781,7 +782,8 @@ let ani = {
     })
 
   },
-  moveSection : function moveSection(duration,targetHeight,callback) { // 페이지내에서 스크롤 이동하는 함수 (이동시간,이동할스크롤값,콜백함수)
+  // 페이지내에서 스크롤 이동하는 함수 (이동시간,이동할스크롤값,콜백함수)
+  moveSection : function moveSection(duration,targetHeight,callback) { 
     $('html,body')
     .stop()
     .animate({ scrollTop: targetHeight },duration * 1000,callback)
@@ -830,45 +832,6 @@ let ani = {
             }
           }
         }
-
-        // if($('.main.silvercare').length || $('.main.assessment').length){
-        //   let headerHeight = $('#header').height();
-        //   let subTitleInnerHeight = $('.depth').height() + $('.subtitle').innerHeight(); 
-        //   let section2Top = $('.section2').offset().top;
-        //   let depthInnerHeight = $('.depth').innerHeight() 
-        //   // if(direction == "down"){ // 스크롤 내릴때
-        //   //   let tg1 = subTitleInnerHeight - headerHeight 
-        //   //   let tg2 = $('.section1').innerHeight() - headerHeight
-
-        //   //   let move2 = $('.section2').offset().top - headerHeight - $('.depth').innerHeight()
-        //   //   if(scrollY >= 0 && scrollY < tg1 && ableScroll){
-        //   //     ableScroll = false
-        //   //     ani.moveSection(.6,tg1,()=>{ableScroll = true})
-        //   //   }
-        //   //   else if (scrollY > tg1 && scrollY < tg2 && ableScroll){
-        //   //     ableScroll = false
-        //   //     ani.moveSection(.6,move2,()=>{ableScroll = true})
-        //   //   }
-        //   // } else { // 스크롤 올릴때
-
-        //   //   let tg1 = subTitleInnerHeight - headerHeight
-        //   //   let tg2 = section2Top - headerHeight - depthInnerHeight
-        //   //   if(scrollY < tg2){
-        //   //       if(scrollY > tg1 && ableScroll){
-        //   //         ableScroll = false
-        //   //         ani.moveSection(.6,tg1,()=>{ableScroll = true})
-        //   //       } 
-        //   //       if(scrollY < tg1 && ableScroll) {
-        //   //         ableScroll = false
-        //   //         ani.moveSection(.6,0,()=>{ableScroll = true})
-        //   //       }
-        //   //   }
-        //   // }
-
-
-
-
-        // }
 
         if($('.main.band').length){ // 밴드 구조달라서 따로 분기
           if(direction === "down"){ // 스크롤 내릴때
