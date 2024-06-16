@@ -476,8 +476,8 @@ let ani = {
       $(window).trigger('resize')
     }
   },
+  // 애니메이션 기본값 셋팅
   initAnimationSet : function () {
-    // 애니메이션 기본값 셋팅
     if($('.main-section').length > 0){
       // 이 부분에서 리사이즈로 각각의 초기값을 지정해도 좋음.
       // 단! 그렇다면 애니메이션 함수에서는 fromTo가 아닌 to로 사용하도록 교체
@@ -679,7 +679,7 @@ let ani = {
     if($('.chatting').length > 0){
       // 채팅문의 아이콘 스크롤 위치에 따른 색상변화
       let wH = 0
-      let c = $('.chatting').height()
+      let chattingH = $('.chatting').height()
       let chat_trg1 = $('.main-section.introduction').offset().top
       let chat_trg1_H = $('.main-section.introduction').innerHeight()
       let chat_trg2 = $('.main-section.silvercare').offset().top
@@ -698,38 +698,38 @@ let ani = {
       let chat_trg7_H = $('#footer').innerHeight()
       $(window).scroll(function(){
         wH = $(window).scrollTop()
-        let a = $('.chatting').offset().top
-        let d = a + c
+        let chattingOffTop = $('.chatting').offset().top
+        let chaticon = chattingOffTop + chattingH
 
-        if(d < $('.intro-section').height() + $('#header').height()){
+        if(chaticon < $('.intro-section').height() + $('#header').height()){
           $('.chatting').removeClass('white')
           $('.chatting').addClass('blue')
         }
-        if(a > chat_trg1 && a < chat_trg1 + chat_trg1_H){
+        if(chattingOffTop > chat_trg1 && chattingOffTop < chat_trg1 + chat_trg1_H){
           $('.chatting').removeClass('white')
           $('.chatting').addClass('blue')
         }
-        if(a > chat_trg2 && a < chat_trg2 + chat_trg2_H){
+        if(chattingOffTop > chat_trg2 && chattingOffTop < chat_trg2 + chat_trg2_H){
           $('.chatting').removeClass('blue')
           $('.chatting').addClass('white')
         }
-        if(a > chat_trg3 && a < chat_trg3 + chat_trg3_H){
+        if(chattingOffTop > chat_trg3 && chattingOffTop < chat_trg3 + chat_trg3_H){
           $('.chatting').removeClass('white')
           $('.chatting').addClass('blue')
         }
-        if(a > chat_trg5 && a < chat_trg5 + chat_trg5_H){
+        if(chattingOffTop > chat_trg5 && chattingOffTop < chat_trg5 + chat_trg5_H){
           $('.chatting').removeClass('white')
           $('.chatting').addClass('blue')
         }
-        if(a > chat_trg6 && a < chat_trg6 + chat_trg6_H){
+        if(chattingOffTop > chat_trg6 && chattingOffTop < chat_trg6 + chat_trg6_H){
           $('.chatting').removeClass('blue')
           $('.chatting').addClass('white')
         }
-        if(a > chat_trg8 && a < chat_trg8 + chat_trg8_H){
+        if(chattingOffTop > chat_trg8 && chattingOffTop < chat_trg8 + chat_trg8_H){
           $('.chatting').removeClass('white')
           $('.chatting').addClass('blue')
         }
-        if(a > chat_trg7 && a < chat_trg7 + chat_trg7_H){
+        if(chattingOffTop > chat_trg7 && chattingOffTop < chat_trg7 + chat_trg7_H){
           $('.chatting').removeClass('white')
           $('.chatting').addClass('blue')
         }
